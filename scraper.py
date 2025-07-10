@@ -5,15 +5,20 @@ from datetime import datetime, timedelta
 
 url = "https://google-flights4.p.rapidapi.com/date-grid/for-roundtrip"
 
-target_departure = "2026-08-25"
-date_obj = datetime.strptime(target_departure, "%Y-%m-%d")
+target_departure = "02.08.2025"  #input("Podaj datę wylotu (DD.MM.YYYY): ")
+FormatedDate = datetime.strptime(target_departure, "%d.%m.%Y")
+date_obj = FormatedDate.strftime("%Y-%m-%d")
+FormatedArrivalDate = datetime.strptime(date_obj, "%Y-%m-%d") + timedelta(days=1)
+arrivalDate = FormatedArrivalDate.strftime("%Y-%m-%d")
 
 
 querystring = {
     "departureId": "MUC",
     "arrivalId": "HND",
-    "departureDate": target_departure,
-    "arrivalDate": date_obj + timedelta(days=18),
+    "departureDate": date_obj,
+    "arrivalDate": arrivalDate,
+    "currency": "PLN",
+    "cabinClass": 1,
 }
 
 headers = {
@@ -28,7 +33,7 @@ if response.status_code == 200:
     with open("loty.json", "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
 
-    print("✅ Data saved to 'loty.json'")
+    print("✅ Dane zapisane do 'loty.json'")
 else:
     print(f"❌ Error: HTTP {response.status_code}")
 
@@ -39,12 +44,12 @@ with open("loty.json", "r", encoding="utf-8") as file:
 matching_loty = [
     lot
     for lot in loty_data["data"]["prices"]
-    if lot["departureDate"] == target_departure
+    if lot["departureDate"] == date_obj
 ]
 
 if matching_loty:
-    print(f"Znaleziono {len(matching_loty)} lotow od {target_departure}:")
+    print(f"Znaleziono {len(matching_loty)} lotów od {target_departure}:")
     for lot in matching_loty:
-        print(f"  - Powrót: {lot['returnDate']}, Cena: {lot['price']}")
+        print(f"  - Powrót: {lot['returnDate']}, Cena: {lot['price']} zł.")
 else:
-    print(f"Nie znaleziono lotow {target_departure}.")
+    print(f"Loty na {target_departure} nie są jeszcze dostępne.")
