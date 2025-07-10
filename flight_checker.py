@@ -1,6 +1,11 @@
 import requests
 import json
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+import os
+# Ładowanie zmienych z .env
+load_dotenv()
+rapid_api_key = os.getenv("RAPIDAPI_API")
 
 
 url = "https://google-flights4.p.rapidapi.com/date-grid/for-roundtrip"
@@ -25,7 +30,7 @@ querystring = {
 }
 
 headers = {
-    "x-rapidapi-key": "b5fbffba64msh669c8db73430afbp12758fjsn2dd2b16c5ad5",
+    "x-rapidapi-key": rapid_api_key,
     "x-rapidapi-host": "google-flights4.p.rapidapi.com",
 }
 
@@ -33,15 +38,15 @@ response = requests.get(url, headers=headers, params=querystring)
 
 if response.status_code == 200:
     data = response.json()
-    with open("loty.json", "w", encoding="utf-8") as file:
+    with open("flights_dates.json", "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
 
-    print("✅ Dane zapisane do 'loty.json'")
+    print("✅ Dane zapisane do 'flights_dates.json'")
 else:
     print(f"❌ Error: HTTP {response.status_code}")
 
 
-with open("loty.json", "r", encoding="utf-8") as file:
+with open("flights_dates.json", "r", encoding="utf-8") as file:
     loty_data = json.load(file)
 
 matching_loty = [
