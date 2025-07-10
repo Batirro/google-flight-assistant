@@ -10,14 +10,17 @@ FormatedDate = datetime.strptime(target_departure, "%d.%m.%Y")
 date_obj = FormatedDate.strftime("%Y-%m-%d")
 FormatedArrivalDate = datetime.strptime(date_obj, "%Y-%m-%d") + timedelta(days=1)
 arrivalDate = FormatedArrivalDate.strftime("%Y-%m-%d")
-
+TripLenght = int(input("Podaj długość wycieczki: "))
 
 querystring = {
     "departureId": "MUC",
     "arrivalId": "HND",
     "departureDate": date_obj,
     "arrivalDate": arrivalDate,
+    "returnDateFrom": datetime.strftime(FormatedDate + timedelta(days=TripLenght), "%Y-%m-%d"),
+    "returnDateTo": datetime.strftime(FormatedDate + timedelta(days=TripLenght), "%Y-%m-%d"),
     "currency": "PLN",
+    "location": "PL",
     "cabinClass": 1,
 }
 
