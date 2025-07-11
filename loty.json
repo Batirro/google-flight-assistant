@@ -1,8 +1,0 @@
-{
-    "data": null,
-    "errors": {
-        "arrivalDate": "Incorrect arrivalDate format, should be YYYY-MM-DD"
-    },
-    "status": false,
-    "message": "Errors"
-}
