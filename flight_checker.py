@@ -1,64 +1,33 @@
-import requests
 import json
-from datetime import datetime, timedelta
-from dotenv import load_dotenv
-import os
-from email_sender import send_email
 
+def sprawdzanie_lotow(target_departure):
+    """
+    Check if any flights exist for a given departure date.
 
-# Ładowanie zmienych z .env
-load_dotenv()
+    This function reads flight data from a JSON file and checks if there are any flights
+    scheduled for the specified departure date.
 
-url = "https://google-flights4.p.rapidapi.com/date-grid/for-roundtrip"
+    Args:
+        target_departure (str): The target departure date to check for flights.
+            Expected format is as defined in the flights_dates.json file.
 
-target_departure = input("Podaj datę wylotu (DD.MM.YYYY): ")
-FormatedDate = datetime.strptime(target_departure, "%d.%m.%Y")
-date_obj = FormatedDate.strftime("%Y-%m-%d")
-FormatedArrivalDate = datetime.strptime(date_obj, "%Y-%m-%d") + timedelta(days=1)
-arrivalDate = FormatedArrivalDate.strftime("%Y-%m-%d")
-TripLenght = int(input("Podaj długość wycieczki: "))
+    Returns:
+        bool: True if flights exist for the target date, False otherwise.
 
-querystring = {
-    "departureId": "MUC",
-    "arrivalId": "HND",
-    "departureDate": date_obj,
-    "arrivalDate": arrivalDate,
-    "returnDateFrom": datetime.strftime(FormatedDate + timedelta(days=TripLenght), "%Y-%m-%d"),
-    "returnDateTo": datetime.strftime(FormatedDate + timedelta(days=TripLenght), "%Y-%m-%d"),
-    "currency": "PLN",
-    "location": "PL",
-    "cabinClass": 1,
-}
+    Example:
+        >>> sprawdzanie_lotow("2024-01-01")
+        True
+    """
+    with open("flights_dates.json", "r", encoding="utf-8") as file:
+        loty_data = json.load(file)
 
-headers = {
-    "x-rapidapi-key": os.getenv("RAPIDAPI_API"),
-    "x-rapidapi-host": "google-flights4.p.rapidapi.com",
-}
-
-response = requests.get(url, headers=headers, params=querystring)
-
-if response.status_code == 200:
-    data = response.json()
-    with open("flights_dates.json", "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=4, ensure_ascii=False)
-
-    print("✅ Dane zapisane do 'flights_dates.json'")
-else:
-    print(f"❌ Error: HTTP {response.status_code}")
-
-
-with open("flights_dates.json", "r", encoding="utf-8") as file:
-    loty_data = json.load(file)
-
-matching_loty = [
-    lot
-    for lot in loty_data["data"]["prices"]
-    if lot["departureDate"] == date_obj
+    matching_loty = [
+        lot
+        for lot in loty_data["data"]["prices"]
+        if lot["departureDate"] == target_departure
 ]
 
-if matching_loty:
-    subject = 'Loty są dostępne'
-    plainText = f"Znaleziono {len(matching_loty)} lotów od {target_departure}."
-    send_email(subject=subject, plainText=plainText)
-else:
-    print(f"Loty na {target_departure} nie są jeszcze dostępne.")
+    if matching_loty:
+        return True
+    else:
+        return False

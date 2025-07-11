@@ -2,42 +2,133 @@
     "data": {
         "prices": [
             {
-                "departureDate": "2025-07-30",
-                "returnDate": "2025-08-20",
-                "price": 5149
+                "departureDate": "2025-08-02",
+                "returnDate": "2025-08-03",
+                "price": 6098
             },
             {
                 "departureDate": "2025-08-02",
-                "returnDate": "2025-08-20",
-                "price": 5973
+                "returnDate": "2025-08-04",
+                "price": 6190
+            },
+            {
+                "departureDate": "2025-08-02",
+                "returnDate": "2025-08-05",
+                "price": 6098
             },
             {
                 "departureDate": "2025-08-04",
-                "returnDate": "2025-08-20",
-                "price": 5627
-            },
-            {
-                "departureDate": "2025-08-03",
-                "returnDate": "2025-08-20",
-                "price": 5973
-            },
-            {
-                "departureDate": "2025-08-05",
-                "returnDate": "2025-08-20",
-                "price": 5495
-            },
-            {
-                "departureDate": "2025-08-01",
-                "returnDate": "2025-08-20",
-                "price": 5973
+                "returnDate": "2025-08-05",
+                "price": 6867
             },
             {
                 "departureDate": "2025-07-31",
-                "returnDate": "2025-08-20",
-                "price": 5660
+                "returnDate": "2025-08-01",
+                "price": 5852
+            },
+            {
+                "departureDate": "2025-07-31",
+                "returnDate": "2025-08-02",
+                "price": 5207
+            },
+            {
+                "departureDate": "2025-07-31",
+                "returnDate": "2025-08-03",
+                "price": 5727
+            },
+            {
+                "departureDate": "2025-07-31",
+                "returnDate": "2025-08-04",
+                "price": 5727
+            },
+            {
+                "departureDate": "2025-07-31",
+                "returnDate": "2025-08-05",
+                "price": 5902
+            },
+            {
+                "departureDate": "2025-08-01",
+                "returnDate": "2025-08-02",
+                "price": 7399
+            },
+            {
+                "departureDate": "2025-08-01",
+                "returnDate": "2025-08-03",
+                "price": 6098
+            },
+            {
+                "departureDate": "2025-08-01",
+                "returnDate": "2025-08-04",
+                "price": 6065
+            },
+            {
+                "departureDate": "2025-08-01",
+                "returnDate": "2025-08-05",
+                "price": 6098
+            },
+            {
+                "departureDate": "2025-08-03",
+                "returnDate": "2025-08-04",
+                "price": 7399
+            },
+            {
+                "departureDate": "2025-08-03",
+                "returnDate": "2025-08-05",
+                "price": 6772
             }
         ],
-        "noPrices": []
+        "noPrices": [
+            {
+                "departureDate": "2025-07-31",
+                "returnDate": "2025-07-30",
+                "price": null
+            },
+            {
+                "departureDate": "2025-07-31",
+                "returnDate": "2025-07-31",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-01",
+                "returnDate": "2025-07-31",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-01",
+                "returnDate": "2025-08-01",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-02",
+                "returnDate": "2025-08-01",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-02",
+                "returnDate": "2025-08-02",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-03",
+                "returnDate": "2025-08-02",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-03",
+                "returnDate": "2025-08-03",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-04",
+                "returnDate": "2025-08-03",
+                "price": null
+            },
+            {
+                "departureDate": "2025-08-04",
+                "returnDate": "2025-08-04",
+                "price": null
+            }
+        ]
     },
     "status": true,
     "message": "Successful"
