@@ -14,7 +14,7 @@ if __name__ == "__main__":
         subject = f'Znaleziono loty na {month} {year}'
         plainText = 'Znaleziono loty'
         print(f'Znaleziono loty na {month} {year}')
-        #send_email(subject, plainText)
+        send_email(subject, plainText)
     else:
         print(f'Nie ma jeszcze lotów dostępnych na {month} {year}')
 
