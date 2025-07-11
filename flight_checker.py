@@ -3,11 +3,11 @@ import json
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import os
+from email_sender import send_email
+
+
 # Ładowanie zmienych z .env
 load_dotenv()
-
-rapid_api_key = os.getenv("RAPIDAPI_API")
-
 
 url = "https://google-flights4.p.rapidapi.com/date-grid/for-roundtrip"
 
@@ -31,7 +31,7 @@ querystring = {
 }
 
 headers = {
-    "x-rapidapi-key": rapid_api_key,
+    "x-rapidapi-key": os.getenv("RAPIDAPI_API"),
     "x-rapidapi-host": "google-flights4.p.rapidapi.com",
 }
 
@@ -57,8 +57,8 @@ matching_loty = [
 ]
 
 if matching_loty:
-    print(f"Znaleziono {len(matching_loty)} lotów od {target_departure}:")
-    for lot in matching_loty:
-        print(f"  - Powrót: {lot['returnDate']}, Cena: {lot['price']} zł.")
+    subject = 'Loty są dostępne'
+    plainText = f"Znaleziono {len(matching_loty)} lotów od {target_departure}."
+    send_email(subject=subject, plainText=plainText)
 else:
     print(f"Loty na {target_departure} nie są jeszcze dostępne.")

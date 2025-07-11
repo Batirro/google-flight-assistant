@@ -4,37 +4,37 @@
             {
                 "departureDate": "2025-07-30",
                 "returnDate": "2025-08-20",
-                "price": 5212
+                "price": 5149
             },
             {
                 "departureDate": "2025-08-02",
                 "returnDate": "2025-08-20",
-                "price": 6786
+                "price": 5973
             },
             {
                 "departureDate": "2025-08-04",
                 "returnDate": "2025-08-20",
-                "price": 5614
+                "price": 5627
             },
             {
                 "departureDate": "2025-08-03",
                 "returnDate": "2025-08-20",
-                "price": 6511
+                "price": 5973
             },
             {
                 "departureDate": "2025-08-05",
                 "returnDate": "2025-08-20",
-                "price": 5482
+                "price": 5495
             },
             {
                 "departureDate": "2025-08-01",
                 "returnDate": "2025-08-20",
-                "price": 6343
+                "price": 5973
             },
             {
                 "departureDate": "2025-07-31",
                 "returnDate": "2025-08-20",
-                "price": 5848
+                "price": 5660
             }
         ],
         "noPrices": []

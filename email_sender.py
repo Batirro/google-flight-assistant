@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def main():
+def send_email(subject, plainText):
     try:
         connection_string = os.getenv("AZURE_CONNECTION_STRING")
         client = EmailClient.from_connection_string(connection_string)
@@ -17,8 +17,8 @@ def main():
                 "to": [{"address": os.getenv("MY_MAIL")}]
             },
             "content": {
-                "subject": "Mail testowy",
-                "plainText": "Hello world via email.",
+                "subject": subject,
+                "plainText": plainText,
             },
             
         }
@@ -29,5 +29,3 @@ def main():
 
     except Exception as ex:
         print(ex)
-
-main()
