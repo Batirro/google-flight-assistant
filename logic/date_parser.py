@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 class DataParser:
     @staticmethod
-    def generuj_date_z_miesiaca(nazwa_miesiaca, rok):
+    def generuj_date_z_miesiaca(nazwa_miesiaca: str, rok: str )-> None:
         miesiace = {
             'Styczeń': 1, 'Luty': 2, 'Marzec': 3, 'Kwiecień': 4,
             'Maj': 5, 'Czerwiec': 6, 'Lipiec': 7, 'Sierpień': 8,
@@ -16,7 +16,7 @@ class DataParser:
             raise ValueError(f"Nieznana nazwa miesiąca: {nazwa_miesiaca}")
 
     @staticmethod
-    def formatowanie_daty(month, year, TripLenght):
+    def formatowanie_daty(month: str, year: str, TripLenght: int) -> str:
         target_departure = DataParser.generuj_date_z_miesiaca(month, year)
         if target_departure is None:
             raise ValueError("Nie udało się wygenerować daty.")

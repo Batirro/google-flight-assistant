@@ -2,7 +2,7 @@ import json
 
 
 class FlightChecker:
-    def sprawdzanie_lotow(self, target_departure):
+    def sprawdzanie_lotow(self, target_departure: str):
         with open("flights_dates.json", "r",encoding="utf-8") as file:
             loty_data = json.load(file)
 

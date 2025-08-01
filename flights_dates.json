@@ -1,14 +1,14 @@
 {
     "search_metadata": {
-        "id": "688d04d25fda0bf14c7c9bf1",
+        "id": "688d188303610addd23e793d",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/688d04d25fda0bf14c7c9bf1.json",
-        "created_at": "2025-08-01 18:17:54 UTC",
-        "processed_at": "2025-08-01 18:17:54 UTC",
+        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/688d188303610addd23e793d.json",
+        "created_at": "2025-08-01 19:41:55 UTC",
+        "processed_at": "2025-08-01 19:41:55 UTC",
         "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTAxagcIARIDQ0RHcgcIARIDQVVTGh4SCjIwMjUtMDktMTNqBwgBEgNBVVNyBwgBEgNDREdCAQFIAXABmAEB&tfu=EgIIAQ",
-        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688d04d25fda0bf14c7c9bf1.html",
-        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688d04d25fda0bf14c7c9bf1.prettify",
-        "total_time_taken": 1.18
+        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688d188303610addd23e793d.html",
+        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688d188303610addd23e793d.prettify",
+        "total_time_taken": 1.39
     },
     "search_parameters": {
         "engine": "google_flights",
@@ -94,7 +94,7 @@
                 "typical_for_this_route": 533000,
                 "difference_percent": 1
             },
-            "price": 2982,
+            "price": 2981,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
             "extensions": [
@@ -103,7 +103,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RDUVRNd09YeENRVEU0TnhvTENJNlpFaEFDR2dOUVRFNDRISEMxOUFRPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkxIUiIsbnVsbCwiQkEiLCIzMDkiXSxbIkxIUiIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkJBIiwiMTg3Il1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RDUVRNd09YeENRVEU0TnhvTENPaVlFaEFDR2dOUVRFNDRISENWOVFRPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkxIUiIsbnVsbCwiQkEiLCIzMDkiXSxbIkxIUiIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkJBIiwiMTg3Il1dXQ=="
         },
         {
             "flights": [
@@ -189,7 +189,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RCUmpNd2ZFUk1NVFE1TVJvTENQZlFFaEFDR2dOUVRFNDRISEM4Z3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMCJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxNDkxIl1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUmpNd2ZFUk1NVFE1TVJvTENORFFFaEFDR2dOUVRFNDRISENmaEFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMCJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxNDkxIl1dXQ=="
         },
         {
             "flights": [
@@ -273,7 +273,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3hNU0RFd05URjhURWcwTmpnYUN3aTQ3eElRQWhvRFVFeE9PQnh3Mm9zRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkZSQSIsbnVsbCwiTEgiLCIxMDUxIl0sWyJGUkEiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJMSCIsIjQ2OCJdXV0="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hNU0RFd05URjhURWcwTmpnYUN3aVI3eElRQWhvRFVFeE9PQnh3dm93RiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkZSQSIsbnVsbCwiTEgiLCIxMDUxIl0sWyJGUkEiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJMSCIsIjQ2OCJdXV0="
         },
         {
             "flights": [
@@ -359,7 +359,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3hMVERFME1EWjhTMHcyTmpjYUN3aTR4Uk1RQWhvRFVFeE9PQnh3OUtJRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFNUyIsbnVsbCwiS0wiLCIxNDA2Il0sWyJBTVMiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJLTCIsIjY2NyJdXV0="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hMVERFME1EWjhTMHcyTmpjYUN3aVB4Uk1RQWhvRFVFeE9PQnh3M0tNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFNUyIsbnVsbCwiS0wiLCIxNDA2Il0sWyJBTVMiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJLTCIsIjY2NyJdXV0="
         }
     ],
     "other_flights": [
@@ -439,7 +439,7 @@
                 "typical_for_this_route": 533000,
                 "difference_percent": 0
             },
-            "price": 3052,
+            "price": 3051,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
             "extensions": [
@@ -448,7 +448,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RFVERrMWZFUk1NVFl4TWhvTENPN1BFaEFDR2dOUVRFNDRISENYZ3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkRUVyIsbnVsbCwiREwiLCI5NSJdLFsiRFRXIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxNjEyIl1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RFVERrMWZFUk1NVFl4TWhvTENNZlBFaEFDR2dOUVRFNDRISEQ2Z3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkRUVyIsbnVsbCwiREwiLCI5NSJdLFsiRFRXIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxNjEyIl1dXQ=="
         },
         {
             "flights": [
@@ -527,7 +527,7 @@
                 "typical_for_this_route": 533000,
                 "difference_percent": 8
             },
-            "price": 3052,
+            "price": 3051,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
             "extensions": [
@@ -536,7 +536,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3hWUVRreE5IeFZRVEl6TWpVYUN3anV6eElRQWhvRFVFeE9PQnh3bDRNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIklBRCIsbnVsbCwiVUEiLCI5MTQiXSxbIklBRCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIlVBIiwiMjMyNSJdXV0="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hWUVRreE5IeFZRVEl6TWpVYUN3akh6eElRQWhvRFVFeE9PQnh3K29NRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIklBRCIsbnVsbCwiVUEiLCI5MTQiXSxbIklBRCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIlVBIiwiMjMyNSJdXV0="
         },
         {
             "flights": [
@@ -615,7 +615,7 @@
                 "typical_for_this_route": 533000,
                 "difference_percent": -8
             },
-            "price": 3052,
+            "price": 3051,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
             "extensions": [
@@ -624,7 +624,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RFVERnMWZFUk1NekE1T0JvTENPN1BFaEFDR2dOUVRFNDRISENYZ3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiREwiLCI4NSJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIzMDk4Il1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RFVERnMWZFUk1NekE1T0JvTENNZlBFaEFDR2dOUVRFNDRISEQ2Z3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiREwiLCI4NSJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIzMDk4Il1dXQ=="
         },
         {
             "flights": [
@@ -710,7 +710,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RCUmpNeWZFUk1NekE1T0JvTENQZlFFaEFDR2dOUVRFNDRISEM4Z3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMiJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIzMDk4Il1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUmpNeWZFUk1NekE1T0JvTENORFFFaEFDR2dOUVRFNDRISENmaEFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMiJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIzMDk4Il1dXQ=="
         },
         {
             "flights": [
@@ -787,7 +787,7 @@
                 "typical_for_this_route": 533000,
                 "difference_percent": -8
             },
-            "price": 3075,
+            "price": 3074,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
             "extensions": [
@@ -796,7 +796,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RCUmpNeWZFUk1NVEUzTUJvTENNL2hFaEFDR2dOUVRFNDRISEQ5aHdVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMiJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxMTcwIl1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUmpNeWZFUk1NVEUzTUJvTENLamhFaEFDR2dOUVRFNDRISERoaUFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMiJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxMTcwIl1dXQ=="
         },
         {
             "flights": [
@@ -880,7 +880,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RDUVRNd05YeENRVEU1TVJvTENLbWxFeEFDR2dOUVRFNDRISENmbWdVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkxIUiIsbnVsbCwiQkEiLCIzMDUiXSxbIkxIUiIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkJBIiwiMTkxIl1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RDUVRNd05YeENRVEU1TVJvTENJR2xFeEFDR2dOUVRFNDRISENHbXdVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkxIUiIsbnVsbCwiQkEiLCIzMDUiXSxbIkxIUiIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkJBIiwiMTkxIl1dXQ=="
         },
         {
             "flights": [
@@ -967,7 +967,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3hCUmpFME5EUjhTMHcyTmpjYUN3aXp4Qk1RQWhvRFVFeE9PQnh3MEtJRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFNUyIsbnVsbCwiQUYiLCIxNDQ0Il0sWyJBTVMiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJLTCIsIjY2NyJdXV0="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hCUmpFME5EUjhTMHcyTmpjYUN3aUt4Qk1RQWhvRFVFeE9PQnh3dUtNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFNUyIsbnVsbCwiQUYiLCIxNDQ0Il0sWyJBTVMiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJLTCIsIjY2NyJdXV0="
         },
         {
             "flights": [
@@ -1054,7 +1054,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RCUVRFMU1YeEJRVGt6TlJvTENOckVFeEFDR2dOUVRFNDRISERib2dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIk9SRCIsbnVsbCwiQUEiLCIxNTEiXSxbIk9SRCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkFBIiwiOTM1Il1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUVRFMU1YeEJRVGt6TlJvTENMSEVFeEFDR2dOUVRFNDRISEREb3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIk9SRCIsbnVsbCwiQUEiLCIxNTEiXSxbIk9SRCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkFBIiwiOTM1Il1dXQ=="
         },
         {
             "flights": [
@@ -1140,7 +1140,7 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3hCUXpnM01YeEJRekU1TVRnYUN3aWF4aE1RQWhvRFVFeE9PQnh3anFNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIllVTCIsbnVsbCwiQUMiLCI4NzEiXSxbIllVTCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkFDIiwiMTkxOCJdXV0="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hCUXpnM01YeEJRekU1TVRnYUN3anh4Uk1RQWhvRFVFeE9PQnh3OXFNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIllVTCIsbnVsbCwiQUMiLCI4NzEiXSxbIllVTCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkFDIiwiMTkxOCJdXV0="
         },
         {
             "flights": [
@@ -1226,11 +1226,11 @@
                 "Free change, possible fare difference",
                 "Bag and fare conditions depend on the return flight"
             ],
-            "departure_token": "WyJDalJJTlVKMFNXdFFkR3hqWVRSQlJHaFVVbEZDUnkwdExTMHRMUzB0TFhaM2FHZ3hOVUZCUVVGQlIybE9RazVOUkVwak9HTkJFZ3RFVERnNWZFUk1NVEEyTUJvTENNL3JGQkFDR2dOUVRFNDRISERmendVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiREwiLCI4OSJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxMDYwIl1dXQ=="
+            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RFVERnNWZFUk1NVEEyTUJvTENLUHJGQkFDR2dOUVRFNDRISERPMEFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiREwiLCI4OSJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxMDYwIl1dXQ=="
         }
     ],
     "price_insights": {
-        "lowest_price": 2982,
+        "lowest_price": 2981,
         "price_level": "typical",
         "typical_price_range": [
             2750,
@@ -1479,7 +1479,7 @@
             ],
             [
                 1753999200,
-                2982
+                2981
             ]
         ]
     },
