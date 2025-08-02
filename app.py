@@ -1,26 +1,39 @@
-from logic.email_sender import EmailSender
-from logic.email_sender import TelegramSender
+from flask import Flask, render_template, request
+from logic.email_sender import EmailSender, TelegramSender
 from logic.date_parser import DataParser
 from logic.flight_checker import FlightChecker
 from logic.data_grabber import DataGrabber
 
+app = Flask(__name__)
 
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "POST":
+        month = request.form["month"]
+        year = request.form["year"]
+        trip_length = int(request.form["trip_length"])
+        departure_airport = request.form["departure_airport"]
+        arrival_airport = request.form["arrival_airport"]
+        currency = request.form["currency"]
+
+
+        data_parser = DataParser()
+        data_grabber = DataGrabber()
+        flight_checker = FlightChecker()
+        telegram_sender = TelegramSender()
+
+        target_departure, return_date = data_parser.formatowanie_daty(month, year, trip_length)
+        response = data_grabber.api_connector(target_departure, return_date, departure_airport, arrival_airport, currency)
+        data_grabber.pobierz_dane(response)
+
+        if flight_checker.sprawdzanie_lotow(target_departure):
+            subject = f'Znaleziono loty na {month} {year}\n Link do lotów: {flight_checker.info_extractor()}'
+            # EmailSender().send_email(subject, "Znaleziono loty")
+            telegram_sender.send_bot_massage(subject)
+            return render_template("result.html", result="Znaleziono loty!", link=flight_checker.info_extractor())
+        else:
+            return render_template("result.html", result=f"Brak lotów na {month} {year}", link=None)
+    return render_template("form.html")
 if __name__ == "__main__":
-    DataGrabber = DataGrabber()
-    FlightChecker = FlightChecker()
-    TelegramSender = TelegramSender ()
-    month = input("Podaj miesiąc wylotu: ")
-    year = input("Podaj rok wylotu: ")
-    TripLenght = int(input("Podaj długość wycieczki: "))
-    target_departure, return_date = DataParser.formatowanie_daty(month, year, TripLenght)
-    response = DataGrabber.api_connector(target_departure, return_date)
-    DataGrabber.pobierz_dane(response)
-    if FlightChecker.sprawdzanie_lotow(target_departure):
-        subject = f'Znaleziono loty na {month} {year}'
-        plainText = 'Znaleziono loty'
-        print(f'Znaleziono loty na {month} {year}')
-        # EmailSender.send_email(subject, plainText)
-        TelegramSender.send_bot_massage(subject)
-    else:
-        print(f'Nie ma jeszcze lotów dostępnych na {month} {year}')
+    app.run(debug=True, host="0.0.0.0", port=8000)
 

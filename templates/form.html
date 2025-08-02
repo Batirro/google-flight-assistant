@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Szukaj lotów</title>
+</head>
+<body>
+    <h1>Szukaj lotów</h1>
+    <form method="post">
+        <label>Miesiąc:</label>
+        <input type="text" name="month" required><br>
+
+        <label>Rok:</label>
+        <input type="text" name="year" required><br>
+
+        <label>Długość wycieczki:</label>
+        <input type="number" name="trip_length" required><br>
+
+        <label>Lotnisko wylotu (np. WAW):</label>
+        <input type="text" name="departure_airport" required><br>
+
+        <label>Lotnisko przylotu (np. BCN):</label>
+        <input type="text" name="arrival_airport" required><br>
+
+        <label>Waluta (np. PLN, EUR):</label>
+        <input type="text" name="currency" required><br>
+
+        <button type="submit">Szukaj</button>
+    </form>
+</body>
+</html>

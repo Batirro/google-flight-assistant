@@ -2,7 +2,8 @@ import json
 
 
 class FlightChecker:
-    def sprawdzanie_lotow(self, target_departure: str):
+    
+    def sprawdzanie_lotow(self, target_departure: str) -> bool:
         with open("flights_dates.json", "r",encoding="utf-8") as file:
             loty_data = json.load(file)
 
@@ -15,3 +16,13 @@ class FlightChecker:
                     return True
 
         return False
+    
+    def info_extractor(self) -> str:
+        with open("flights_dates.json", "r", encoding="utf-8") as file:
+            loty_data = json.load(file)
+        
+        link = loty_data.get("search_metadata", []).get("google_flights_url", {})
+        return link
+                
+        
+

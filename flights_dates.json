@@ -1,21 +1,21 @@
 {
     "search_metadata": {
-        "id": "688d188303610addd23e793d",
+        "id": "688e03b31f758a99f7ddc95e",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/688d188303610addd23e793d.json",
-        "created_at": "2025-08-01 19:41:55 UTC",
-        "processed_at": "2025-08-01 19:41:55 UTC",
-        "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTAxagcIARIDQ0RHcgcIARIDQVVTGh4SCjIwMjUtMDktMTNqBwgBEgNBVVNyBwgBEgNDREdCAQFIAXABmAEB&tfu=EgIIAQ",
-        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688d188303610addd23e793d.html",
-        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688d188303610addd23e793d.prettify",
-        "total_time_taken": 1.39
+        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/688e03b31f758a99f7ddc95e.json",
+        "created_at": "2025-08-02 12:25:23 UTC",
+        "processed_at": "2025-08-02 12:25:23 UTC",
+        "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTAxagcIARIDV0FXcgcIARIDQkNOGh4SCjIwMjUtMDktMTNqBwgBEgNCQ05yBwgBEgNXQVdCAQFIAXABmAEB&tfu=EgIIAQ",
+        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688e03b31f758a99f7ddc95e.html",
+        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/688e03b31f758a99f7ddc95e.prettify",
+        "total_time_taken": 0.58
     },
     "search_parameters": {
         "engine": "google_flights",
         "hl": "pl",
         "gl": "us",
-        "departure_id": "CDG",
-        "arrival_id": "AUS",
+        "departure_id": "WAW",
+        "arrival_id": "BCN",
         "outbound_date": "2025-09-01",
         "return_date": "2025-09-13",
         "currency": "PLN"
@@ -25,341 +25,181 @@
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 12:00"
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 17:00"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Londyn-Heathrow",
-                        "id": "LHR",
-                        "time": "2025-09-01 12:20"
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-01 18:35"
                     },
-                    "duration": 80,
-                    "airplane": "Airbus A320",
-                    "airline": "British Airways",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "BA 309",
-                    "ticket_also_sold_by": [
-                        "American"
-                    ],
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 52 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Londyn-Heathrow",
-                        "id": "LHR",
-                        "time": "2025-09-01 16:05"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 20:20"
-                    },
-                    "duration": 615,
-                    "airplane": "Boeing 787",
-                    "airline": "British Airways",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "BA 187",
-                    "ticket_also_sold_by": [
-                        "American"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 487 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 225,
-                    "name": "Port lotniczy Londyn-Heathrow",
-                    "id": "LHR"
-                }
-            ],
-            "total_duration": 920,
-            "carbon_emissions": {
-                "this_flight": 540000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 1
-            },
-            "price": 2981,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RDUVRNd09YeENRVEU0TnhvTENPaVlFaEFDR2dOUVRFNDRISENWOVFRPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkxIUiIsbnVsbCwiQkEiLCIzMDkiXSxbIkxIUiIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkJBIiwiMTg3Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 10:30"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 13:55"
-                    },
-                    "duration": 565,
-                    "airplane": "Boeing 777",
-                    "airline": "Air France",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
-                    "travel_class": "Economy",
-                    "flight_number": "AF 30",
-                    "ticket_also_sold_by": [
-                        "Delta"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 393 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 15:50"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 17:15"
-                    },
-                    "duration": 145,
-                    "airplane": "Airbus A321",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 1491",
-                    "ticket_also_sold_by": [
-                        "Air France"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "Live TV",
-                        "Carbon emissions estimate: 136 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 115,
-                    "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                    "id": "ATL"
-                }
-            ],
-            "total_duration": 825,
-            "carbon_emissions": {
-                "this_flight": 530000,
-                "typical_for_this_route": 533000,
-                "difference_percent": -1
-            },
-            "price": 3053,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUmpNd2ZFUk1NVFE1TVJvTENORFFFaEFDR2dOUVRFNDRISENmaEFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMCJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxNDkxIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 07:20"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Frankfurt",
-                        "id": "FRA",
-                        "time": "2025-09-01 08:35"
-                    },
-                    "duration": 75,
+                    "duration": 95,
                     "airplane": "Airbus A319",
                     "airline": "Lufthansa",
                     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
                     "travel_class": "Economy",
-                    "flight_number": "LH 1051",
-                    "ticket_also_sold_by": [
-                        "United"
+                    "flight_number": "LH 1615",
+                    "legroom": "74 cm",
+                    "extensions": [
+                        "Below average legroom (74 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 95 kg"
                     ],
+                    "plane_and_crew_by": "Lufthansa CityLine"
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-01 19:30"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 21:40"
+                    },
+                    "duration": 130,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1818",
                     "legroom": "76 cm",
                     "extensions": [
                         "Average legroom (76 cm)",
                         "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 72 kg"
+                        "Carbon emissions estimate: 116 kg"
                     ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Frankfurt",
-                        "id": "FRA",
-                        "time": "2025-09-01 10:05"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 14:20"
-                    },
-                    "duration": 675,
-                    "airplane": "Airbus A330",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 468",
-                    "ticket_also_sold_by": [
-                        "United"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 487 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
                 }
             ],
             "layovers": [
                 {
-                    "duration": 90,
-                    "name": "Port lotniczy Frankfurt",
-                    "id": "FRA"
+                    "duration": 55,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
                 }
             ],
-            "total_duration": 840,
+            "total_duration": 280,
             "carbon_emissions": {
-                "this_flight": 560000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 5
+                "this_flight": 213000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -1
             },
-            "price": 3092,
+            "price": 705,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hNU0RFd05URjhURWcwTmpnYUN3aVI3eElRQWhvRFVFeE9PQnh3dm93RiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkZSQSIsbnVsbCwiTEgiLCIxMDUxIl0sWyJGUkEiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJMSCIsIjQ2OCJdXV0="
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZzFNU0RFMk1UVjhURWd4T0RFNEdnc0kzcVlFRUFJYUExQk1UamdjY0xPVkFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJNVUMiLG51bGwsIkxIIiwiMTYxNSJdLFsiTVVDIiwiMjAyNS0wOS0wMSIsIkJDTiIsbnVsbCwiTEgiLCIxODE4Il1dXQ=="
         },
         {
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 10:15"
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 05:35"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Amsterdam-Schiphol",
-                        "id": "AMS",
-                        "time": "2025-09-01 11:30"
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 08:40"
                     },
-                    "duration": 75,
-                    "airplane": "Boeing 737",
-                    "airline": "KLM",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+                    "duration": 185,
+                    "airplane": "Airbus A321neo",
+                    "airline": "Wizz Air",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
                     "travel_class": "Economy",
-                    "flight_number": "KL 1406",
-                    "ticket_also_sold_by": [
-                        "Delta",
-                        "Air France"
-                    ],
-                    "legroom": "76 cm",
+                    "flight_number": "W6 1475",
                     "extensions": [
-                        "Average legroom (76 cm)",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 50 kg"
+                        "Carbon emissions estimate: 122 kg"
                     ]
-                },
+                }
+            ],
+            "total_duration": 185,
+            "carbon_emissions": {
+                "this_flight": 122000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -43
+            },
+            "price": 848,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZ1pYTmpFME56VWFDd2pBbGdVUUFob0RVRXhPT0J4dzNMTUIiLFtbIldBVyIsIjIwMjUtMDktMDEiLCJCQ04iLG51bGwsIlc2IiwiMTQ3NSJdXV0="
+        },
+        {
+            "flights": [
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Amsterdam-Schiphol",
-                        "id": "AMS",
-                        "time": "2025-09-01 12:40"
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 15:55"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 16:00"
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 19:00"
                     },
-                    "duration": 620,
-                    "airplane": "Boeing 787",
-                    "airline": "KLM",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+                    "duration": 185,
+                    "airplane": "Airbus A321neo",
+                    "airline": "Wizz Air",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
                     "travel_class": "Economy",
-                    "flight_number": "KL 667",
-                    "ticket_also_sold_by": [
-                        "Delta",
-                        "Air France"
-                    ],
-                    "legroom": "79 cm",
+                    "flight_number": "W6 1477",
                     "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 434 kg"
+                        "Carbon emissions estimate: 122 kg"
                     ],
                     "often_delayed_by_over_30_min": true
                 }
             ],
-            "layovers": [
+            "total_duration": 185,
+            "carbon_emissions": {
+                "this_flight": 122000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -43
+            },
+            "price": 848,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZ1pYTmpFME56Y2FDd2pBbGdVUUFob0RVRXhPT0J4dzNMTUIiLFtbIldBVyIsIjIwMjUtMDktMDEiLCJCQ04iLG51bGwsIlc2IiwiMTQ3NyJdXV0="
+        },
+        {
+            "flights": [
                 {
-                    "duration": 70,
-                    "name": "Port lotniczy Amsterdam-Schiphol",
-                    "id": "AMS"
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 09:20"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 12:30"
+                    },
+                    "duration": 190,
+                    "airplane": "Boeing 737MAX 8 Passenger",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 437",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "In-seat power & USB outlets",
+                        "Stream media to your device",
+                        "Carbon emissions estimate: 140 kg"
+                    ]
                 }
             ],
-            "total_duration": 765,
+            "total_duration": 190,
             "carbon_emissions": {
-                "this_flight": 486000,
-                "typical_for_this_route": 533000,
-                "difference_percent": -9
+                "this_flight": 140000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -35
             },
-            "price": 3202,
+            "price": 1473,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hMVERFME1EWjhTMHcyTmpjYUN3aVB4Uk1RQWhvRFVFeE9PQnh3M0tNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFNUyIsbnVsbCwiS0wiLCIxNDA2Il0sWyJBTVMiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJLTCIsIjY2NyJdXV0="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZ1ZNVHpRek54b0xDTWIrQ0JBQ0dnTlFURTQ0SEhDT3VBST0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJCQ04iLG51bGwsIkxPIiwiNDM3Il1dXQ=="
         }
     ],
     "other_flights": [
@@ -367,1119 +207,613 @@
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 08:55"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Detroit",
-                        "id": "DTW",
-                        "time": "2025-09-01 11:50"
-                    },
-                    "duration": 535,
-                    "airplane": "Airbus A330",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 95",
-                    "ticket_also_sold_by": [
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 352 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Detroit",
-                        "id": "DTW",
-                        "time": "2025-09-01 16:16"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 18:20"
-                    },
-                    "duration": 184,
-                    "airplane": "Airbus A320",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 1612",
-                    "ticket_also_sold_by": [
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "Live TV",
-                        "Carbon emissions estimate: 178 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 266,
-                    "name": "Port lotniczy Detroit",
-                    "id": "DTW"
-                }
-            ],
-            "total_duration": 985,
-            "carbon_emissions": {
-                "this_flight": 532000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 0
-            },
-            "price": 3051,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RFVERrMWZFUk1NVFl4TWhvTENNZlBFaEFDR2dOUVRFNDRISEQ2Z3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkRUVyIsbnVsbCwiREwiLCI5NSJdLFsiRFRXIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxNjEyIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 12:25"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Waszyngton-Dulles",
-                        "id": "IAD",
-                        "time": "2025-09-01 14:55"
-                    },
-                    "duration": 510,
-                    "airplane": "Boeing 777",
-                    "airline": "United",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "UA 914",
-                    "ticket_also_sold_by": [
-                        "Lufthansa",
-                        "Brussels Airlines"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 389 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Waszyngton-Dulles",
-                        "id": "IAD",
-                        "time": "2025-09-01 17:55"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 20:25"
-                    },
-                    "duration": 210,
-                    "airplane": "Boeing 737",
-                    "airline": "United",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "UA 2325",
-                    "ticket_also_sold_by": [
-                        "Lufthansa",
-                        "Brussels Airlines"
-                    ],
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "Stream media to your device",
-                        "Carbon emissions estimate: 184 kg"
-                    ]
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 180,
-                    "name": "Port lotniczy Waszyngton-Dulles",
-                    "id": "IAD"
-                }
-            ],
-            "total_duration": 900,
-            "carbon_emissions": {
-                "this_flight": 574000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 8
-            },
-            "price": 3051,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UA.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hWUVRreE5IeFZRVEl6TWpVYUN3akh6eElRQWhvRFVFeE9PQnh3K29NRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIklBRCIsbnVsbCwiVUEiLCI5MTQiXSxbIklBRCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIlVBIiwiMjMyNSJdXV0="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 15:40"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 19:25"
-                    },
-                    "duration": 585,
-                    "airplane": "Boeing 767",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 85",
-                    "ticket_also_sold_by": [
-                        "Virgin Atlantic",
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 355 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 22:59"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-02 00:18"
-                    },
-                    "duration": 139,
-                    "airplane": "Airbus A321",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 3098",
-                    "ticket_also_sold_by": [
-                        "Virgin Atlantic",
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "Live TV",
-                        "Carbon emissions estimate: 136 kg"
-                    ]
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 214,
-                    "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                    "id": "ATL"
-                }
-            ],
-            "total_duration": 938,
-            "carbon_emissions": {
-                "this_flight": 492000,
-                "typical_for_this_route": 533000,
-                "difference_percent": -8
-            },
-            "price": 3051,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RFVERnMWZFUk1NekE1T0JvTENNZlBFaEFDR2dOUVRFNDRISEQ2Z3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiREwiLCI4NSJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIzMDk4Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 14:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 17:25"
-                    },
-                    "duration": 565,
-                    "airplane": "Airbus A350",
-                    "airline": "Air France",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
-                    "travel_class": "Economy",
-                    "flight_number": "AF 32",
-                    "ticket_also_sold_by": [
-                        "Delta",
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat USB outlet",
-                        "On-demand video",
-                        "Carbon emissions estimate: 356 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 22:59"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-02 00:18"
-                    },
-                    "duration": 139,
-                    "airplane": "Airbus A321",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 3098",
-                    "ticket_also_sold_by": [
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "Live TV",
-                        "Carbon emissions estimate: 136 kg"
-                    ]
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 334,
-                    "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                    "id": "ATL"
-                }
-            ],
-            "total_duration": 1038,
-            "carbon_emissions": {
-                "this_flight": 493000,
-                "typical_for_this_route": 533000,
-                "difference_percent": -8
-            },
-            "price": 3053,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUmpNeWZFUk1NekE1T0JvTENORFFFaEFDR2dOUVRFNDRISENmaEFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMiJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIzMDk4Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 14:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 17:25"
-                    },
-                    "duration": 565,
-                    "airplane": "Airbus A350",
-                    "airline": "Air France",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
-                    "travel_class": "Economy",
-                    "flight_number": "AF 32",
-                    "ticket_also_sold_by": [
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat USB outlet",
-                        "On-demand video",
-                        "Carbon emissions estimate: 356 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 19:49"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 21:09"
-                    },
-                    "duration": 140,
-                    "airplane": "Airbus A321",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 1170",
-                    "ticket_also_sold_by": [
-                        "KLM"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "Live TV",
-                        "Carbon emissions estimate: 136 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 144,
-                    "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                    "id": "ATL"
-                }
-            ],
-            "total_duration": 849,
-            "carbon_emissions": {
-                "this_flight": 493000,
-                "typical_for_this_route": 533000,
-                "difference_percent": -8
-            },
-            "price": 3074,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUmpNeWZFUk1NVEUzTUJvTENLamhFaEFDR2dOUVRFNDRISERoaUFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiQUYiLCIzMiJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxMTcwIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 07:55"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Londyn-Heathrow",
-                        "id": "LHR",
-                        "time": "2025-09-01 08:15"
-                    },
-                    "duration": 80,
-                    "airplane": "Airbus A320",
-                    "airline": "British Airways",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "BA 305",
-                    "ticket_also_sold_by": [
-                        "American"
-                    ],
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 52 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Londyn-Heathrow",
-                        "id": "LHR",
-                        "time": "2025-09-01 11:20"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 15:50"
-                    },
-                    "duration": 630,
-                    "airplane": "Boeing 777",
-                    "airline": "British Airways",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "BA 191",
-                    "ticket_also_sold_by": [
-                        "American"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat USB outlet",
-                        "On-demand video",
-                        "Carbon emissions estimate: 546 kg"
-                    ]
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 185,
-                    "name": "Port lotniczy Londyn-Heathrow",
-                    "id": "LHR"
-                }
-            ],
-            "total_duration": 895,
-            "carbon_emissions": {
-                "this_flight": 599000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 12
-            },
-            "price": 3161,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/BA.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RDUVRNd05YeENRVEU1TVJvTENJR2xFeEFDR2dOUVRFNDRISENHbXdVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkxIUiIsbnVsbCwiQkEiLCIzMDUiXSxbIkxIUiIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkJBIiwiMTkxIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 09:15"
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 19:40"
                     },
                     "arrival_airport": {
                         "name": "Port lotniczy Amsterdam-Schiphol",
                         "id": "AMS",
-                        "time": "2025-09-01 10:40"
+                        "time": "2025-09-01 21:45"
                     },
-                    "duration": 85,
-                    "airplane": "Airbus A220-300 Passenger",
-                    "airline": "Air France",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AF.png",
-                    "travel_class": "Economy",
-                    "flight_number": "AF 1444",
-                    "ticket_also_sold_by": [
-                        "Delta",
-                        "KLM"
-                    ],
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 59 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Amsterdam-Schiphol",
-                        "id": "AMS",
-                        "time": "2025-09-01 12:40"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 16:00"
-                    },
-                    "duration": 620,
-                    "airplane": "Boeing 787",
+                    "duration": 125,
+                    "airplane": "Embraer 190",
                     "airline": "KLM",
                     "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
                     "travel_class": "Economy",
-                    "flight_number": "KL 667",
-                    "ticket_also_sold_by": [
-                        "Delta",
-                        "Air France"
-                    ],
+                    "flight_number": "KL 1318",
                     "legroom": "79 cm",
                     "extensions": [
                         "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 434 kg"
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 123 kg"
                     ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 120,
-                    "name": "Port lotniczy Amsterdam-Schiphol",
-                    "id": "AMS"
-                }
-            ],
-            "total_duration": 825,
-            "carbon_emissions": {
-                "this_flight": 494000,
-                "typical_for_this_route": 533000,
-                "difference_percent": -7
-            },
-            "price": 3201,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hCUmpFME5EUjhTMHcyTmpjYUN3aUt4Qk1RQWhvRFVFeE9PQnh3dUtNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFNUyIsbnVsbCwiQUYiLCIxNDQ0Il0sWyJBTVMiLCIyMDI1LTA5LTAxIiwiQVVTIixudWxsLCJLTCIsIjY2NyJdXV0="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 13:55"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Chicago-O’Hare",
-                        "id": "ORD",
-                        "time": "2025-09-01 16:00"
-                    },
-                    "duration": 545,
-                    "airplane": "Boeing 787",
-                    "airline": "American",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
-                    "travel_class": "Economy",
-                    "flight_number": "AA 151",
-                    "ticket_also_sold_by": [
-                        "Iberia"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 377 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
+                    "plane_and_crew_by": "KLM Cityhopper"
                 },
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Chicago-O’Hare",
-                        "id": "ORD",
-                        "time": "2025-09-01 21:15"
+                        "name": "Port lotniczy Amsterdam-Schiphol",
+                        "id": "AMS",
+                        "time": "2025-09-02 06:35"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 23:58"
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-02 08:40"
                     },
-                    "duration": 163,
-                    "airplane": "Airbus A321",
-                    "airline": "American",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
+                    "duration": 125,
+                    "airplane": "Embraer 190",
+                    "airline": "KLM",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
                     "travel_class": "Economy",
-                    "flight_number": "AA 935",
-                    "ticket_also_sold_by": [
-                        "Iberia"
-                    ],
-                    "legroom": "76 cm",
+                    "flight_number": "KL 1497",
+                    "legroom": "79 cm",
                     "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "Stream media to your device",
-                        "Carbon emissions estimate: 161 kg"
+                        "Average legroom (79 cm)",
+                        "Carbon emissions estimate: 153 kg"
                     ],
-                    "often_delayed_by_over_30_min": true
+                    "plane_and_crew_by": "German Airways"
                 }
             ],
             "layovers": [
                 {
-                    "duration": 315,
-                    "name": "Port lotniczy Chicago-O’Hare",
-                    "id": "ORD"
+                    "duration": 530,
+                    "name": "Port lotniczy Amsterdam-Schiphol",
+                    "id": "AMS",
+                    "overnight": true
                 }
             ],
-            "total_duration": 1023,
+            "total_duration": 780,
             "carbon_emissions": {
-                "this_flight": 539000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 1
+                "this_flight": 277000,
+                "typical_for_this_route": 215000,
+                "difference_percent": 29
             },
-            "price": 3201,
+            "price": 742,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AA.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RCUVRFMU1YeEJRVGt6TlJvTENMSEVFeEFDR2dOUVRFNDRISEREb3dVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIk9SRCIsbnVsbCwiQUEiLCIxNTEiXSxbIk9SRCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkFBIiwiOTM1Il1dXQ=="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/KL.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZzFMVERFek1UaDhTMHd4TkRrM0dnc0k5Y0lFRUFJYUExQk1UamdjY0lXZEFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJBTVMiLG51bGwsIktMIiwiMTMxOCJdLFsiQU1TIiwiMjAyNS0wOS0wMiIsIkJDTiIsbnVsbCwiS0wiLCIxNDk3Il1dXQ=="
         },
         {
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 14:10"
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 09:40"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Montreal-Pierre Elliott Trudeau",
-                        "id": "YUL",
-                        "time": "2025-09-01 15:35"
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-01 11:30"
                     },
-                    "duration": 445,
-                    "airplane": "Boeing 777",
-                    "airline": "Air Canada",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+                    "duration": 110,
+                    "airplane": "Airbus A321neo",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
                     "travel_class": "Economy",
-                    "flight_number": "AC 871",
-                    "ticket_also_sold_by": [
-                        "United",
-                        "Lufthansa"
-                    ],
-                    "legroom": "79 cm",
+                    "flight_number": "LH 1347",
+                    "legroom": "74 cm",
                     "extensions": [
-                        "Average legroom (79 cm)",
-                        "Wi-Fi for a fee",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 363 kg"
+                        "Below average legroom (74 cm)",
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 77 kg"
                     ]
                 },
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Montreal-Pierre Elliott Trudeau",
-                        "id": "YUL",
-                        "time": "2025-09-01 16:45"
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-01 13:25"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 20:01"
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 15:30"
                     },
-                    "duration": 256,
-                    "airplane": "Airbus A319",
-                    "airline": "Air Canada",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
                     "travel_class": "Economy",
-                    "flight_number": "AC 1918",
+                    "flight_number": "LH 1130",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 114 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 115,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 350,
+            "carbon_emissions": {
+                "this_flight": 192000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -11
+            },
+            "price": 1002,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZzFNU0RFek5EZDhURWd4TVRNd0dnc0l1WTRHRUFJYUExQk1UamdjY0tEVUFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJGUkEiLG51bGwsIkxIIiwiMTM0NyJdLFsiRlJBIiwiMjAyNS0wOS0wMSIsIkJDTiIsbnVsbCwiTEgiLCIxMTMwIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 06:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-01 07:35"
+                    },
+                    "duration": 95,
+                    "airplane": "Airbus A319",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1617",
                     "ticket_also_sold_by": [
-                        "United"
+                        "LOT"
                     ],
                     "legroom": "74 cm",
                     "extensions": [
                         "Below average legroom (74 cm)",
                         "Wi-Fi for a fee",
-                        "Stream media to your device",
-                        "Carbon emissions estimate: 253 kg"
+                        "Carbon emissions estimate: 95 kg"
                     ],
-                    "plane_and_crew_by": "Air Canada Rouge"
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 70,
-                    "name": "Port lotniczy Montreal-Pierre Elliott Trudeau",
-                    "id": "YUL"
-                }
-            ],
-            "total_duration": 771,
-            "carbon_emissions": {
-                "this_flight": 617000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 16
-            },
-            "price": 3203,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/AC.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
-            ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3hCUXpnM01YeEJRekU1TVRnYUN3anh4Uk1RQWhvRFVFeE9PQnh3OXFNRiIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIllVTCIsbnVsbCwiQUMiLCI4NzEiXSxbIllVTCIsIjIwMjUtMDktMDEiLCJBVVMiLG51bGwsIkFDIiwiMTkxOCJdXV0="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle",
-                        "id": "CDG",
-                        "time": "2025-09-01 12:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 15:40"
-                    },
-                    "duration": 580,
-                    "airplane": "Airbus A330",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-                    "travel_class": "Economy",
-                    "flight_number": "DL 89",
-                    "ticket_also_sold_by": [
-                        "Virgin Atlantic"
-                    ],
-                    "legroom": "79 cm",
-                    "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "On-demand video",
-                        "Carbon emissions estimate: 415 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
+                    "plane_and_crew_by": "Lufthansa CityLine"
                 },
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                        "id": "ATL",
-                        "time": "2025-09-01 17:28"
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-01 09:05"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Austin-Bergstrom",
-                        "id": "AUS",
-                        "time": "2025-09-01 18:54"
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 11:15"
                     },
-                    "duration": 146,
-                    "airplane": "Airbus A321",
-                    "airline": "Delta",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
+                    "duration": 130,
+                    "airplane": "Airbus A320",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
                     "travel_class": "Economy",
-                    "flight_number": "DL 1060",
-                    "ticket_also_sold_by": [
-                        "Virgin Atlantic"
-                    ],
-                    "legroom": "79 cm",
+                    "flight_number": "LH 1810",
+                    "legroom": "76 cm",
                     "extensions": [
-                        "Average legroom (79 cm)",
-                        "Free Wi-Fi",
-                        "In-seat power & USB outlets",
-                        "Live TV",
-                        "Carbon emissions estimate: 136 kg"
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 103 kg"
                     ]
                 }
             ],
             "layovers": [
                 {
-                    "duration": 108,
-                    "name": "Port lotniczy Atlanta - Hartsfield-Jackson",
-                    "id": "ATL"
+                    "duration": 90,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
                 }
             ],
-            "total_duration": 834,
+            "total_duration": 315,
             "carbon_emissions": {
-                "this_flight": 552000,
-                "typical_for_this_route": 533000,
-                "difference_percent": 4
+                "this_flight": 200000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -7
             },
-            "price": 3415,
+            "price": 1068,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/DL.png",
-            "extensions": [
-                "Checked baggage for a fee",
-                "Full refund for cancellations",
-                "Free change, possible fare difference",
-                "Bag and fare conditions depend on the return flight"
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZzFNU0RFMk1UZDhURWd4T0RFd0dnc0k5TUVHRUFJYUExQk1UamdjY0p2aUFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJNVUMiLG51bGwsIkxIIiwiMTYxNyJdLFsiTVVDIiwiMjAyNS0wOS0wMSIsIkJDTiIsbnVsbCwiTEgiLCIxODEwIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 13:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-01 14:45"
+                    },
+                    "duration": 95,
+                    "airplane": "Airbus A319",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1613",
+                    "ticket_also_sold_by": [
+                        "LOT"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 95 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true,
+                    "plane_and_crew_by": "Lufthansa CityLine"
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-01 15:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 17:55"
+                    },
+                    "duration": 130,
+                    "airplane": "Airbus A220-300 Passenger",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1816",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 121 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true,
+                    "plane_and_crew_by": "Air Baltic"
+                }
             ],
-            "departure_token": "WyJDalJJVnkxamMxbFlabEY2VVVsQlJrcFhVMmRDUnkwdExTMHRMUzB0TFc5NVoyVXlOVUZCUVVGQlIybE9SMGxSUzAxc04ybEJFZ3RFVERnNWZFUk1NVEEyTUJvTENLUHJGQkFDR2dOUVRFNDRISERPMEFVPSIsW1siQ0RHIiwiMjAyNS0wOS0wMSIsIkFUTCIsbnVsbCwiREwiLCI4OSJdLFsiQVRMIiwiMjAyNS0wOS0wMSIsIkFVUyIsbnVsbCwiREwiLCIxMDYwIl1dXQ=="
+            "layovers": [
+                {
+                    "duration": 60,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
+                }
+            ],
+            "total_duration": 285,
+            "carbon_emissions": {
+                "this_flight": 217000,
+                "typical_for_this_route": 215000,
+                "difference_percent": 1
+            },
+            "price": 1068,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZzFNU0RFMk1UTjhURWd4T0RFMkdnc0k5TUVHRUFJYUExQk1UamdjY0p2aUFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJNVUMiLG51bGwsIkxIIiwiMTYxMyJdLFsiTVVDIiwiMjAyNS0wOS0wMSIsIkJDTiIsbnVsbCwiTEgiLCIxODE2Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-01 06:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-01 08:30"
+                    },
+                    "duration": 110,
+                    "airplane": "Airbus A320",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1353",
+                    "ticket_also_sold_by": [
+                        "LOT"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 87 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-01 09:50"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-01 11:55"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1126",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 114 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 80,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 315,
+            "carbon_emissions": {
+                "this_flight": 202000,
+                "typical_for_this_route": 215000,
+                "difference_percent": -6
+            },
+            "price": 1102,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+            "departure_token": "WyJDalJJUTBKb1dHVkJVREJ6VEVGQlJUVXlUa0ZDUnkwdExTMHRMUzB0ZG5kaVltUXpNMEZCUVVGQlIybFBRVGROUlU5eU1tdEJFZzFNU0RFek5UTjhURWd4TVRJMkdnc0l3OXdHRUFJYUExQk1UamdjY0xmcEFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDEiLCJGUkEiLG51bGwsIkxIIiwiMTM1MyJdLFsiRlJBIiwiMjAyNS0wOS0wMSIsIkJDTiIsbnVsbCwiTEgiLCIxMTI2Il1dXQ=="
         }
     ],
     "price_insights": {
-        "lowest_price": 2981,
+        "lowest_price": 705,
         "price_level": "typical",
         "typical_price_range": [
-            2750,
-            5000
+            520,
+            840
         ],
         "price_history": [
             [
-                1748815200,
-                2913
-            ],
-            [
                 1748901600,
-                2924
+                792
             ],
             [
                 1748988000,
-                2915
+                794
             ],
             [
                 1749074400,
-                2927
+                795
             ],
             [
                 1749160800,
-                2930
+                795
             ],
             [
                 1749247200,
-                2929
+                796
             ],
             [
                 1749333600,
-                2938
+                796
             ],
             [
                 1749420000,
-                2932
+                744
             ],
             [
                 1749506400,
-                2487
+                744
             ],
             [
                 1749592800,
-                2477
+                744
             ],
             [
                 1749679200,
-                2469
+                742
             ],
             [
                 1749765600,
-                2466
+                794
             ],
             [
                 1749852000,
-                2470
+                779
             ],
             [
                 1749938400,
-                2475
+                779
             ],
             [
                 1750024800,
-                2474
+                779
             ],
             [
                 1750111200,
-                2474
+                744
             ],
             [
                 1750197600,
-                2475
+                795
             ],
             [
                 1750284000,
-                2460
+                788
             ],
             [
                 1750370400,
-                2459
+                717
             ],
             [
                 1750456800,
-                2992
+                643
             ],
             [
                 1750543200,
-                2987
+                654
             ],
             [
                 1750629600,
-                2927
+                643
             ],
             [
                 1750716000,
-                2921
+                643
             ],
             [
                 1750802400,
-                2991
+                653
             ],
             [
                 1750888800,
-                2804
+                686
             ],
             [
                 1750975200,
-                2800
+                654
             ],
             [
                 1751061600,
-                2800
+                609
             ],
             [
                 1751148000,
-                2773
+                591
             ],
             [
                 1751234400,
-                2768
+                654
             ],
             [
                 1751320800,
-                2771
+                578
             ],
             [
                 1751407200,
-                2771
+                518
             ],
             [
                 1751493600,
-                2771
+                501
             ],
             [
                 1751580000,
-                2784
+                474
             ],
             [
                 1751666400,
-                2767
+                510
             ],
             [
                 1751752800,
-                2770
+                501
             ],
             [
                 1751839200,
-                2770
+                474
             ],
             [
                 1751925600,
-                2768
+                474
             ],
             [
                 1752012000,
-                2781
+                426
             ],
             [
                 1752098400,
-                2794
+                469
             ],
             [
                 1752184800,
-                2798
+                492
             ],
             [
                 1752271200,
-                2808
+                531
             ],
             [
                 1752357600,
-                2808
+                564
             ],
             [
                 1752444000,
-                2808
+                654
             ],
             [
                 1752530400,
-                2801
+                704
             ],
             [
                 1752616800,
-                2806
+                704
             ],
             [
                 1752703200,
-                2801
+                652
             ],
             [
                 1752789600,
-                2803
+                652
             ],
             [
                 1752876000,
-                2903
+                652
             ],
             [
                 1752962400,
-                2903
+                652
             ],
             [
                 1753048800,
-                2903
+                652
             ],
             [
                 1753135200,
-                2007
+                651
             ],
             [
                 1753221600,
-                2010
+                651
             ],
             [
                 1753308000,
-                2946
+                651
             ],
             [
                 1753394400,
-                2950
+                651
             ],
             [
                 1753480800,
-                2943
+                651
             ],
             [
                 1753567200,
-                2755
+                652
             ],
             [
                 1753653600,
-                2755
+                652
             ],
             [
                 1753740000,
-                2764
+                651
             ],
             [
                 1753826400,
-                2774
+                652
             ],
             [
                 1753912800,
-                2977
+                653
             ],
             [
                 1753999200,
-                2981
+                653
+            ],
+            [
+                1754085600,
+                705
             ]
         ]
     },
@@ -1488,27 +822,27 @@
             "departure": [
                 {
                     "airport": {
-                        "id": "CDG",
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle"
+                        "id": "WAW",
+                        "name": "Lotnisko Chopina Warszawa"
                     },
-                    "city": "Paryż",
-                    "country": "Francja",
-                    "country_code": "FR",
-                    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
-                    "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+                    "city": "Warszawa",
+                    "country": "Polska",
+                    "country_code": "PL",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHx25TjZC37XYjd35zw7q_e_LkTtU5W8UU5aNruIEFZ8jijgQfjKJekztMYYqNnWAaSzk5IOJCZwpmhg",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYgCZaR1AQIUNfZw69CxHGT2OB0VmzHyYCmfyHLlH1lJ2D1OlspuNu2uN7sK40UqPj5Z_kAZhiUpZUUYlMqsL3_cZdxPEjp86EGSCGi4"
                 }
             ],
             "arrival": [
                 {
                     "airport": {
-                        "id": "AUS",
-                        "name": "Port lotniczy Austin-Bergstrom"
+                        "id": "BCN",
+                        "name": "Port lotniczy Barcelona"
                     },
-                    "city": "Austin",
-                    "country": "Stany Zjednoczone",
-                    "country_code": "US",
-                    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKdjkMcBZuGRD1MjnuLQvdGtpTk0RyjdYs0Z8JsPtfIjer-6VvmfmMLxzvBkeyUrhf_focikfda4rVHg",
-                    "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ73FSj9E8pKaNvjWKyEDQGfLV-pky_onARvOY-zHWvQ-hOuPJSqyyXzvyg4-kGGAcZxdO6T5SYGWBzrX8x6MSPq7gBHsSLzX9MYjFJWA"
+                    "city": "Barcelona",
+                    "country": "Hiszpania",
+                    "country_code": "ES",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOk3xypjQxrqfZPlTUH5lubWcGBzOkdXv7IVkOL--w1FYohepC2Y1hN69JZMcmQsAOt2hIy7EWP0SfXA",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8RLrNH5mwpZ7VV_y8imJgifZndKGVUDYaU5-3_hF41Qrpet1SbU1az4wU48pwjNcbuAC9cYwCNqDCxMF1MgcMCvzO0P__9pb0Q9JBGM"
                 }
             ]
         },
@@ -1516,27 +850,27 @@
             "departure": [
                 {
                     "airport": {
-                        "id": "AUS",
-                        "name": "Port lotniczy Austin-Bergstrom"
+                        "id": "BCN",
+                        "name": "Port lotniczy Barcelona"
                     },
-                    "city": "Austin",
-                    "country": "Stany Zjednoczone",
-                    "country_code": "US",
-                    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKdjkMcBZuGRD1MjnuLQvdGtpTk0RyjdYs0Z8JsPtfIjer-6VvmfmMLxzvBkeyUrhf_focikfda4rVHg",
-                    "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ73FSj9E8pKaNvjWKyEDQGfLV-pky_onARvOY-zHWvQ-hOuPJSqyyXzvyg4-kGGAcZxdO6T5SYGWBzrX8x6MSPq7gBHsSLzX9MYjFJWA"
+                    "city": "Barcelona",
+                    "country": "Hiszpania",
+                    "country_code": "ES",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOk3xypjQxrqfZPlTUH5lubWcGBzOkdXv7IVkOL--w1FYohepC2Y1hN69JZMcmQsAOt2hIy7EWP0SfXA",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8RLrNH5mwpZ7VV_y8imJgifZndKGVUDYaU5-3_hF41Qrpet1SbU1az4wU48pwjNcbuAC9cYwCNqDCxMF1MgcMCvzO0P__9pb0Q9JBGM"
                 }
             ],
             "arrival": [
                 {
                     "airport": {
-                        "id": "CDG",
-                        "name": "Port lotniczy Paryż-Roissy-Charles de Gaulle"
+                        "id": "WAW",
+                        "name": "Lotnisko Chopina Warszawa"
                     },
-                    "city": "Paryż",
-                    "country": "Francja",
-                    "country_code": "FR",
-                    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGx8ii2KbSDdbdzfKye5oDN2bwBA6audqI7XUEf2iMRZezpn_ZbQe1ZIuvUSH-8XOMe958umDwSsAF1w",
-                    "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyQJ-woNs0iO22mPSkmRUM5gcsTbbYeypQ6BBTeFxXr90mqTxZl57Fdq2CDuLn4w7cKZ8TT9_zZhOpF57rIpA7yWKQnqKvkKIf9Y-qJDo"
+                    "city": "Warszawa",
+                    "country": "Polska",
+                    "country_code": "PL",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHx25TjZC37XYjd35zw7q_e_LkTtU5W8UU5aNruIEFZ8jijgQfjKJekztMYYqNnWAaSzk5IOJCZwpmhg",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYgCZaR1AQIUNfZw69CxHGT2OB0VmzHyYCmfyHLlH1lJ2D1OlspuNu2uN7sK40UqPj5Z_kAZhiUpZUUYlMqsL3_cZdxPEjp86EGSCGi4"
                 }
             ]
         }

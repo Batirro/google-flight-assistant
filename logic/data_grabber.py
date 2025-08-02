@@ -7,14 +7,14 @@ class DataGrabber:
     def __init__(self):
         load_dotenv()
 
-    def api_connector(self, target_departure, return_date):
+    def api_connector(self, target_departure, return_date, departure_airport, arrival_airport, currency):
         params = {
             "engine": "google_flights",
-            "departure_id": "CDG",
-            "arrival_id": "AUS",
+            "departure_id": departure_airport,
+            "arrival_id": arrival_airport,
             "outbound_date": target_departure,
             "return_date": return_date,
-            "currency": "PLN",
+            "currency": currency,
             "hl": "pl",
             "api_key": os.getenv("SERP_API")
             }
