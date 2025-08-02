@@ -1,1 +1,5 @@
 .env
+*.db
+google-flight
+*.json
+/logic/__pycache__
