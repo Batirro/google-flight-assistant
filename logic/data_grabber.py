@@ -22,7 +22,7 @@ class DataGrabber:
         search = GoogleSearch(params)
         results = search.get_dict()
         return results
-
+    # TODO: Switch to something safer and more relaiable than basic .json file
     def pobierz_dane(self, response):
         data = response
         with open("flights_dates.json", "w", encoding="utf-8") as file:

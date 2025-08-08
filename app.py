@@ -15,6 +15,7 @@ def index():
         departure_airport = request.form["departure_airport"]
         arrival_airport = request.form["arrival_airport"]
         currency = request.form["currency"]
+        seat_class = request.form["seat_class"]
 
 
         data_parser = DataParser()
