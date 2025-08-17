@@ -16,6 +16,7 @@ class DataGrabber:
             "return_date": return_date,
             "currency": currency,
             "hl": "pl",
+            "travel_class": 1,
             "api_key": os.getenv("SERP_API")
             }
 

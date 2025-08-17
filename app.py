@@ -3,6 +3,7 @@ from logic.email_sender import EmailSender, TelegramSender
 from logic.date_parser import DataParser
 from logic.flight_checker import FlightChecker
 from logic.data_grabber import DataGrabber
+from services.database import Database
 
 app = Flask(__name__)
 
@@ -22,6 +23,8 @@ def index():
         data_grabber = DataGrabber()
         flight_checker = FlightChecker()
         telegram_sender = TelegramSender()
+        db = Database()
+        
 
         target_departure, return_date = data_parser.formatowanie_daty(month, year, trip_length)
         response = data_grabber.api_connector(target_departure, return_date, departure_airport, arrival_airport, currency)
