@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-
+# TODO: Change date choosing for calendar option or just raw string date
 class DataParser:
     @staticmethod
     def generuj_date_z_miesiaca(nazwa_miesiaca: str, rok: str )-> None:

@@ -6,14 +6,12 @@
 <body>
     <h1>Szukaj lotów</h1>
     <form method="post">
-        <label>Miesiąc:</label>
-        <input type="text" name="month" required><br>
 
-        <label>Rok:</label>
-        <input type="text" name="year" required><br>
+        <label>Data początkowa:</label>
+        <input type="date" name="departure_date" required><br>
 
-        <label>Długość wycieczki:</label>
-        <input type="number" name="trip_length" required><br>
+        <label>Data końcowa:</label>
+        <input type="date" name="return_date" required><br>
 
         <label>Lotnisko wylotu (np. WAW):</label>
         <input type="text" name="departure_airport" required><br>
@@ -25,7 +23,28 @@
         <input type="text" name="currency" required><br>
 
         <label>Klasa:</label>
-        <input type="text" name="seat_class" required><br>
+        <select name="seat_class" required>
+            <option value="1">Ekonomiczna</option>
+            <option value="2">Premium Economy</option>
+            <option value="3">Biznes</option>
+            <option value="4">Pierwsza</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Wybierz sposób powiadomień:</legend>
+            
+            <div>
+                <input type="checkbox" id="email_notify" name="email_notify">
+                <label for="email_notify">Email</label>
+                <input type="email" name="email" placeholder="twój@email.com">
+            </div>
+            
+            <div>
+                <input type="checkbox" id="telegram_notify" name="telegram_notify">
+                <label for="telegram_notify">Telegram</label>
+                <input type="text" name="telegram_tag" placeholder="@twój_tag">
+            </div>
+        </fieldset><br>
 
         <button type="submit">Szukaj</button>
     </form>
