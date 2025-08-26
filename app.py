@@ -3,13 +3,21 @@ from logic.email_sender import EmailSender, TelegramSender
 from logic.flight_checker import FlightChecker
 from logic.data_grabber import DataGrabber
 from logic.date_parser import DataParser
-from logic.data_grabber import FlightSearchParams
-from services.database import Database, FlightPreferences
+from services.database import Database
+from services.schemas import FlightSearchParams, FlightPreferences, SeatClassEnum
+from config.config import DevelopmentConfig
+from services.db_instance import db
+
+
 app = Flask(__name__)
+
+app.config.from_object(DevelopmentConfig)
+db.init_app(app)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
+        database = Database()
         try:
             form_data = {
                 "target_departure": request.form.get("departure_date", ""),
@@ -45,19 +53,14 @@ def index():
                 
             data_grabber.pobierz_dane(response)
 
-            # Zapisujemy użytkownika do bazy
-            database = Database()
             user_id = database.users_query(
                 email=email if email_notify else None,
                 telegram_tag=telegram_tag if telegram_notify else None
             )
 
-            # Zapisujemy preferencje powiadomień
-            if email_notify:
-                database = Database()
+            if email_notify: 
                 database.notification_preferences_query(user_id, "email")
-            if telegram_notify:
-                database = Database()
+            if telegram_notify: 
                 database.notification_preferences_query(user_id, "telegram")
 
             # Zapisujemy preferencje lotów
@@ -67,12 +70,11 @@ def index():
                 departure_airport=flight_preferences.departure_airport,
                 arrival_airport=flight_preferences.arrival_airport,
                 currency=flight_preferences.currency,
-                seat_class=flight_preferences.seat_class,
+                seat_class=SeatClassEnum.from_form(flight_preferences.seat_class),
                 max_price=None,
                 preferred_airline=None
             )
             
-            database = Database()
             database.flight_preferences(user_id, flight_prefs)
 
             # Sprawdzamy dostępność lotów
