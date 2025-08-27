@@ -81,12 +81,28 @@ def index():
             flight_checker = FlightChecker()
             if flight_checker.sprawdzanie_lotow(flight_preferences.target_departure):
                 link = flight_checker.info_extractor()
-                subject = f'Znaleziono loty na {flight_preferences.target_departure}\nLink do lotów: {link}'
-                
+
                 if telegram_notify:
+                    subject = f'Znaleziono loty na {flight_preferences.target_departure}\nLink do lotów: {link}'
                     telegram_sender = TelegramSender()
                     telegram_sender.send_bot_massage(subject)
                 
+                if email_notify:
+                    email_sender = EmailSender()
+                    subject = f"Znaleziono loty na {flight_preferences.target_departure}"
+                    html_body = render_template('email-template.html', flight=flight_preferences, flight_link=link)
+
+                    success, message = email_sender.send_email(
+                    recipient_email=recipient,
+                    subject=subject,
+                    html_message=html_body
+                    )
+                    
+                    if success:
+                        print(f"Status: {message}")
+                    else:
+                        print(f"Status: {message}", 500)
+
                 return render_template("result.html", result="Znaleziono loty!", link=link)
             else:
                 return render_template("result.html", 
