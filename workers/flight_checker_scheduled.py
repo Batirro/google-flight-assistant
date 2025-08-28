@@ -1,4 +1,6 @@
 import time
+
+from flask.templating import render_template
 from app import app, db
 from services.models import User, FlightPreference, NotificationPreference
 from logic.email_sender import EmailSender
@@ -9,14 +11,19 @@ flight_checker = FlightChecker()
 email_sender = EmailSender()
 
 def get_preferences_for_flight(preference: FlightPreference):
-    if flight_checker.sprawdzanie_lotow(preference.arrival_airport):
-        found_flight_data = {
-            "from": preference.departure_airport,
-            "to": preference.arrival_airport,
-            "date": preference.target_departure.strftime('%Y-%m-%d')
-        }
+    target_date = preference.target_departure.strftime('%Y-%m-%d')
 
+    if flight_checker.sprawdzanie_lotow(target_date):
+        found_flight_data = {
+            "departure_airport": preference.departure_airport,
+            "arrival_airport": preference.arrival_airport,
+            "target_departure": target_date,
+            "return_date": preference.return_date.strftime('%Y-%m-%d')
+        }
         return found_flight_data
+    return None
+
+
 
 def check_flights_and_notify():
     with app.app_context():
@@ -31,27 +38,28 @@ def check_flights_and_notify():
             NotificationPreference.method == 'email',
             NotificationPreference.enabled == True
         ).all()
-    print(f"Znaleziono {len(preferences_to_check)} preferencji lotów do sprawdzenia.")
 
-    for preference, user_email in preferences_to_check:
-        flight_info = check_flights_and_notify(preference)
-        link = flight_checker.info_extractor()
-        if flight_info:
-            print(f"Znaleziono lot dla {user_email}! Przygotowuję e-mail.")
+        print(f"Znaleziono {len(preferences_to_check)} preferencji lotów do sprawdzenia.")
 
-            html_body = render_template('email_template.html', flight=flight_info, flight_link=link)
+        for preference, user_email in preferences_to_check:
+            flight_info = get_preferences_for_flight(preference)
+            link = flight_checker.info_extractor()
+            if flight_info:
+                print(f"Znaleziono lot dla {user_email}! Przygotowuję e-mail.")
 
-            email_sender.send_email(
-                recipient_email=user_email,
-                subject=f"Znaleźliśmy dla Ciebie lot: {flight_info['from']} -> {flight_info['to']}",
-                html_message=html_body
-                )
-            time.sleep(2)
-        else:
-            print(f"Brak lotów pasujących do preferencji ID: {preference.preference_id} dla {user_email}.")
-    
-    print("--- Zakończono sprawdzanie lotów ---")
+                html_body = render_template('email-template.html', flight=flight_info, flight_link=link)
 
+
+                email_sender.send_email(
+                    recipient_email=user_email,
+                    subject=f"Znaleźliśmy dla Ciebie lot: {preference.departure_airport} -> {preference.arrival_airport}",
+                    html_message=html_body
+                    )
+                time.sleep(2)
+            else:
+                print(f"Brak lotów pasujących do preferencji ID: {preference.preference_id} dla {user_email}.")
+
+        print("--- Zakończono sprawdzanie lotów ---")
 
 if __name__ == '__main__':
     check_flights_and_notify()
@@ -61,4 +69,4 @@ if __name__ == '__main__':
     try:
         scheduler.start()
     except (KeyboardInterrupt, SystemExit):
-        pass          
+        pass
