@@ -29,7 +29,7 @@ def index():
             }
 
             flight_preferences = FlightSearchParams(**form_data)
-            
+
             # Sprawdzamy powiadomienia
             email_notify = request.form.get("email_notify") == "on"
             telegram_notify = request.form.get("telegram_notify") == "on"
@@ -47,21 +47,28 @@ def index():
             # Pobieramy dane o lotach
             data_grabber = DataGrabber()
             response = data_grabber.api_connector(flight_preferences)
-            
+
             if not response:
                 return render_template("form.html", error="Nie udało się pobrać danych o lotach")
-                
+
             data_grabber.pobierz_dane(response)
 
-            user_id = database.users_query(
+            user_id, user_saved = database.users_query(
                 email=email if email_notify else None,
                 telegram_tag=telegram_tag if telegram_notify else None
             )
 
-            if email_notify: 
-                database.notification_preferences_query(user_id, "email")
-            if telegram_notify: 
-                database.notification_preferences_query(user_id, "telegram")
+            if not user_saved or user_id is None:
+                return render_template("form.html", error="Nie udało się zapisać danych użytkownika.")
+
+            notification_saved = True
+            if email_notify:
+                notification_saved &= database.notification_preferences_query(user_id, "email")
+            if telegram_notify:
+               notification_saved &= database.notification_preferences_query(user_id, "telegram")
+
+            if not notification_saved:
+                return render_template("form.html", error="Nie udało się zapisać preferencji powiadomień")
 
             # Zapisujemy preferencje lotów
             flight_prefs = FlightPreferences(
@@ -74,41 +81,12 @@ def index():
                 max_price=None,
                 preferred_airline=None
             )
-            
-            database.flight_preferences(user_id, flight_prefs)
+            flight_prefs_saved = database.flight_preferences(user_id, flight_prefs)
 
-            # Sprawdzamy dostępność lotów
-            flight_checker = FlightChecker()
-            if flight_checker.sprawdzanie_lotow(flight_preferences.target_departure):
-                link = flight_checker.info_extractor()
+            if not flight_prefs_saved:
+                return render_template("form.html", error="Nie udało się zapisać preferencji lotu.")
 
-                if telegram_notify:
-                    subject = f'Znaleziono loty na {flight_preferences.target_departure}\nLink do lotów: {link}'
-                    telegram_sender = TelegramSender()
-                    telegram_sender.send_bot_massage(subject)
-                
-                if email_notify:
-                    email_sender = EmailSender()
-                    subject = f"Znaleziono loty na {flight_preferences.target_departure}"
-                    html_body = render_template('email-template.html', flight=flight_preferences, flight_link=link)
-
-                    success, message = email_sender.send_email(
-                    recipient_email=recipient,
-                    subject=subject,
-                    html_message=html_body
-                    )
-                    
-                    if success:
-                        print(f"Status: {message}")
-                    else:
-                        print(f"Status: {message}", 500)
-
-                return render_template("result.html", result="Znaleziono loty!", link=link)
-            else:
-                return render_template("result.html", 
-                    result=f"Brak lotów na {flight_preferences.target_departure}", 
-                    link=None
-                )
+            return render_template("result.html", result="Wszystkie preferencje poprawnie zapisane")
 
         except Exception as e:
             print(f"Wystąpił błąd: {str(e)}")  # Debug
@@ -117,4 +95,3 @@ def index():
     return render_template("form.html")
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)
-
