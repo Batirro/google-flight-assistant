@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Twoje preferencje zostały zapisane - Flight Assistant</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/styles.css') }}"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h1>{{ result }}</h1>
+                <h5>Kiedy pojawią się loty zostaniesz powiadomiony przez email.</h5>
+                <a href="/" class="button-link">Powrót do wyszukiwarki</a>
+            </div>
+        </div>
+    </body>
+</html>

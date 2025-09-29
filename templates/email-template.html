@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powiadomienie o locie</title>
+    <style>
+        body { font-family: sans-serif; }
+        .container { padding: 20px; border: 1px solid #ccc; border-radius: 5px; max-width: 600px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Mamy dla Ciebie aktualne informacje dotyczące lotu.</p>
+        
+        <table>
+            <tr>
+                <th>Cel podróży:</th>
+                <td>{{ flight.arrival_airport }}</td>
+            </tr>
+            <tr>
+                <th>Data:</th>
+                <td>{{ flight.target_departure }} - {{ flight.return_date }}</td>
+            </tr>
+            <tr>
+                <th>Skąd:</th>
+                <td>{{ flight.departure_airport }}</td>
+            </tr>
+            <tr>
+                <th>Link do lotu:</th>
+                <td><a href="{{ flight_link }}" class="button">Zobacz szczegóły w Google Flights</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
