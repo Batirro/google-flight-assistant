@@ -5,8 +5,7 @@ from logic.airport_search import AirportSearch
 from services.schemas import FlightSearchParams, FlightPreferences, SeatClassEnum
 from config.config import DevelopmentConfig
 from services.db_instance import db
-from typing import Tuple, Optional
-
+from typing import Tuple, Optional, Any
 
 app = Flask(__name__)
 
@@ -45,29 +44,21 @@ def validate_flight_params(form_data: dict) -> Tuple[Optional[FlightSearchParams
         return None, error_message
 
 
-def validate_notifications(request_form) -> Tuple[bool, bool, str, str, Optional[str]]:
+def validate_notifications(request_form) -> tuple[bool, bool, str, str, str] | tuple[bool, Any, None]:
     """
     Waliduje dane powiadomień z formularza
 
     Returns:
-        Tuple[email_notify, telegram_notify, email, telegram_tag, error_message]
+        Tuple[email_notify, telegram_notify, email, error_message]
     """
     email_notify = request_form.get("email_notify") == "on"
-    telegram_notify = request_form.get("telegram_notify") == "on"
     email = request_form.get("email", "").strip()
-    telegram_tag = request_form.get("telegram_tag", "").strip()
 
     # Walidacja danych kontaktowych
-    if not (email_notify or telegram_notify):
-        return False, False, "", "", "Wybierz przynajmniej jeden sposób powiadomień"
-
     if email_notify and not email:
         return False, False, "", "", "Podaj adres email"
 
-    if telegram_notify and not telegram_tag:
-        return False, False, "", "", "Podaj tag Telegram"
-
-    return email_notify, telegram_notify, email, telegram_tag, None
+    return email_notify, email, None
 
 
 def fetch_flight_data(flight_preferences: FlightSearchParams) -> Tuple[Optional[dict], Optional[str]]:
@@ -92,8 +83,8 @@ def fetch_flight_data(flight_preferences: FlightSearchParams) -> Tuple[Optional[
         return None, f"Błąd podczas pobierania danych lotów: {str(e)}"
 
 
-def save_user_data(database: Database, email_notify: bool, telegram_notify: bool,
-                  email: str, telegram_tag: str) -> Tuple[Optional[int], Optional[str]]:
+def save_user_data(database: Database, email_notify: bool,
+                  email: str) -> Tuple[Optional[int], Optional[str]]:
     """
     Zapisuje dane użytkownika i preferencje powiadomień
 
@@ -103,7 +94,6 @@ def save_user_data(database: Database, email_notify: bool, telegram_notify: bool
     try:
         user_id, user_saved = database.users_query(
             email=email if email_notify else None,
-            telegram_tag=telegram_tag if telegram_notify else None
         )
 
         if not user_saved or user_id is None:
@@ -112,8 +102,6 @@ def save_user_data(database: Database, email_notify: bool, telegram_notify: bool
         notification_saved = True
         if email_notify:
             notification_saved &= database.notification_preferences_query(user_id, "email")
-        if telegram_notify:
-            notification_saved &= database.notification_preferences_query(user_id, "telegram")
 
         if not notification_saved:
             return None, "Nie udało się zapisać preferencji powiadomień"
@@ -224,7 +212,7 @@ def index():
             return render_template("form.html", error=error)
 
         # 3. Waliduj powiadomienia
-        email_notify, telegram_notify, email, telegram_tag, error = validate_notifications(request.form)
+        email_notify, email, error = validate_notifications(request.form)
         if error:
             return render_template("form.html", error=error)
 
@@ -235,7 +223,7 @@ def index():
 
         # 5. Zapisz dane użytkownika
         database = Database()
-        user_id, error = save_user_data(database, email_notify, telegram_notify, email, telegram_tag)
+        user_id, error = save_user_data(database, email_notify, email)
         if error:
             return render_template("form.html", error=error)
 
@@ -250,7 +238,6 @@ def index():
         return render_template(
             "result.html",
             result="Wszystkie preferencje poprawnie zapisane",
-            telegram_notify=telegram_notify
         )
 
     except Exception as e:

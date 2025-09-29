@@ -2,12 +2,10 @@ import os
 import telepot
 import smtplib
 import ssl
-from dotenv import load_dotenv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.utils import formataddr
-#Ładowanie danych z .env
-load_dotenv()
+
 
 class EmailSender:
     def send_email(self, recipient_email, subject, html_message):
@@ -38,13 +36,5 @@ class EmailSender:
             return True, "Email został wysłany pomyślnie"
         except Exception as e:
             return False, f"Wystąpił błąd: {e}"
-
-class TelegramSender:
-    def __init__(self):
-        self.chat_id = os.getenv('TELEGRAM_BOT_CHAT_ID')
-        self.token = os.getenv('TELEGRAM_BOT_API')
-        self.bot = telepot.Bot(token=self.token)
-    def send_bot_massage(self, text):
-        self.bot.sendMessage(self.chat_id, text)
 
 

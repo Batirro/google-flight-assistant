@@ -1,5 +1,4 @@
 import time
-
 from flask.templating import render_template
 from app import app, db
 from services.models import User, FlightPreference, NotificationPreference
@@ -60,7 +59,6 @@ def check_flights_and_notify():
                 print(f"Brak lotów pasujących do preferencji ID: {preference.preference_id} dla {user_email}.")
 
         print("--- Zakończono sprawdzanie lotów ---")
-
 if __name__ == '__main__':
     check_flights_and_notify()
     scheduler = BlockingScheduler(timezone="Europe/Warsaw")

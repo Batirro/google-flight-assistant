@@ -1,14 +1,14 @@
 {
     "search_metadata": {
-        "id": "68c2e19f550cc4b7fe8cba97",
+        "id": "68dae354a89e02e0e0c5d92d",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/68c2e19f550cc4b7fe8cba97.json",
-        "created_at": "2025-09-11 14:50:07 UTC",
-        "processed_at": "2025-09-11 14:50:07 UTC",
-        "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTExagcIARIDV0FXcgcIARIDQkNOGh4SCjIwMjUtMDktMThqBwgBEgNCQ05yBwgBEgNXQVdCAQFIAnABmAEB&tfu=EgIIAQ",
-        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68c2e19f550cc4b7fe8cba97.html",
-        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68c2e19f550cc4b7fe8cba97.prettify",
-        "total_time_taken": 1.13
+        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/68dae354a89e02e0e0c5d92d.json",
+        "created_at": "2025-09-29 19:51:48 UTC",
+        "processed_at": "2025-09-29 19:51:48 UTC",
+        "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTI5agcIARIDV0FXcgcIARIDQkNOGh4SCjIwMjUtMTAtMDVqBwgBEgNCQ05yBwgBEgNXQVdCAQFIAXABmAEB&tfu=EgIIAQ",
+        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68dae354a89e02e0e0c5d92d.html",
+        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68dae354a89e02e0e0c5d92d.prettify",
+        "total_time_taken": 0.56
     },
     "search_parameters": {
         "engine": "google_flights",
@@ -16,11 +16,508 @@
         "gl": "us",
         "departure_id": "WAW",
         "arrival_id": "BCN",
-        "outbound_date": "2025-09-11",
-        "return_date": "2025-09-18",
-        "travel_class": 2,
+        "outbound_date": "2025-09-29",
+        "return_date": "2025-10-05",
+        "travel_class": 1,
         "currency": "PLN"
     },
+    "best_flights": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:50"
+                    },
+                    "arrival_airport": {
+                        "name": "Międzynarodowy Port Lotniczy Katowice",
+                        "id": "KTW",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 50,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3879",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 57 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Międzynarodowy Port Lotniczy Katowice",
+                        "id": "KTW",
+                        "time": "2025-09-30 06:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 07:50"
+                    },
+                    "duration": 100,
+                    "airplane": "Embraer 190",
+                    "airline": "Air Dolomiti",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+                    "travel_class": "Economy",
+                    "flight_number": "EN 8763",
+                    "ticket_also_sold_by": [
+                        "Lufthansa"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 108 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 11:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 13:05"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A320neo",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1128",
+                    "legroom": "74 cm",
+                    "extensions": [
+                        "Below average legroom (74 cm)",
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 92 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 390,
+                    "name": "Międzynarodowy Port Lotniczy Katowice",
+                    "id": "KTW",
+                    "overnight": true
+                },
+                {
+                    "duration": 190,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 855,
+            "carbon_emissions": {
+                "this_flight": 258000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 19
+            },
+            "price": 2101,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE56bDhSVTQ0TnpZemZFeElNVEV5T0JvTENPN29EQkFDR2dOUVRFNDRISERhd2dNPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIktUVyIsbnVsbCwiTE8iLCIzODc5Il0sWyJLVFciLCIyMDI1LTA5LTMwIiwiRlJBIixudWxsLCJFTiIsIjg3NjMiXSxbIkZSQSIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTEyOCJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3849",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 66 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-30 06:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 07:10"
+                    },
+                    "duration": 70,
+                    "airplane": "Airbus A319",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1635",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 71 kg"
+                    ],
+                    "plane_and_crew_by": "Lufthansa CityLine"
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 10:35"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 12:45"
+                    },
+                    "duration": 130,
+                    "airplane": "Airbus A320neo",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1812",
+                    "legroom": "74 cm",
+                    "extensions": [
+                        "Below average legroom (74 cm)",
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 93 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 380,
+                    "name": "Port Lotniczy Wrocław S.A.",
+                    "id": "WRO",
+                    "overnight": true
+                },
+                {
+                    "duration": 205,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
+                }
+            ],
+            "total_duration": 840,
+            "carbon_emissions": {
+                "this_flight": 231000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 7
+            },
+            "price": 2194,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE5EbDhURWd4TmpNMWZFeElNVGd4TWhvTENNZXhEUkFDR2dOUVRFNDRISERXMWdNPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIldSTyIsbnVsbCwiTE8iLCIzODQ5Il0sWyJXUk8iLCIyMDI1LTA5LTMwIiwiTVVDIixudWxsLCJMSCIsIjE2MzUiXSxbIk1VQyIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTgxMiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:50"
+                    },
+                    "arrival_airport": {
+                        "name": "Międzynarodowy Port Lotniczy Katowice",
+                        "id": "KTW",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 50,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3879",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 57 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Międzynarodowy Port Lotniczy Katowice",
+                        "id": "KTW",
+                        "time": "2025-09-30 06:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 07:50"
+                    },
+                    "duration": 100,
+                    "airplane": "Embraer 190",
+                    "airline": "Air Dolomiti",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+                    "travel_class": "Economy",
+                    "flight_number": "EN 8763",
+                    "ticket_also_sold_by": [
+                        "Lufthansa"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 108 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 09:50"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 11:55"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1126",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 114 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 390,
+                    "name": "Międzynarodowy Port Lotniczy Katowice",
+                    "id": "KTW",
+                    "overnight": true
+                },
+                {
+                    "duration": 120,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 785,
+            "carbon_emissions": {
+                "this_flight": 280000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 30
+            },
+            "price": 2225,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE56bDhSVTQ0TnpZemZFeElNVEV5TmhvTENQVEpEUkFDR2dOUVRFNDRISEN1M1FNPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIktUVyIsbnVsbCwiTE8iLCIzODc5Il0sWyJLVFciLCIyMDI1LTA5LTMwIiwiRlJBIixudWxsLCJFTiIsIjg3NjMiXSxbIkZSQSIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTEyNiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3849",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 66 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-30 06:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 07:10"
+                    },
+                    "duration": 70,
+                    "airplane": "Airbus A319",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1635",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 71 kg"
+                    ],
+                    "plane_and_crew_by": "Lufthansa CityLine"
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 09:05"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 11:15"
+                    },
+                    "duration": 130,
+                    "airplane": "Airbus A320",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1810",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 103 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 380,
+                    "name": "Port Lotniczy Wrocław S.A.",
+                    "id": "WRO",
+                    "overnight": true
+                },
+                {
+                    "duration": 115,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
+                }
+            ],
+            "total_duration": 750,
+            "carbon_emissions": {
+                "this_flight": 241000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 12
+            },
+            "price": 2340,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE5EbDhURWd4TmpNMWZFeElNVGd4TUJvTENNK2pEaEFDR2dOUVRFNDRISENBOWdNPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIldSTyIsbnVsbCwiTE8iLCIzODQ5Il0sWyJXUk8iLCIyMDI1LTA5LTMwIiwiTVVDIixudWxsLCJMSCIsIjE2MzUiXSxbIk1VQyIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTgxMCJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:55"
+                    },
+                    "arrival_airport": {
+                        "name": "Międzynarodowy Port Lotniczy im. Jana Pawła II Kraków-Balice",
+                        "id": "KRK",
+                        "time": "2025-09-29 23:50"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 195",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3911",
+                    "legroom": "79 cm",
+                    "extensions": [
+                        "Average legroom (79 cm)",
+                        "Carbon emissions estimate: 53 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Międzynarodowy Port Lotniczy im. Jana Pawła II Kraków-Balice",
+                        "id": "KRK",
+                        "time": "2025-09-30 06:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 07:20"
+                    },
+                    "duration": 80,
+                    "airplane": "Airbus A320",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1627",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 69 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 09:05"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 11:15"
+                    },
+                    "duration": 130,
+                    "airplane": "Airbus A320",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1810",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 103 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 370,
+                    "name": "Międzynarodowy Port Lotniczy im. Jana Pawła II Kraków-Balice",
+                    "id": "KRK",
+                    "overnight": true
+                },
+                {
+                    "duration": 105,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
+                }
+            ],
+            "total_duration": 740,
+            "carbon_emissions": {
+                "this_flight": 227000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 5
+            },
+            "price": 2357,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNU1URjhURWd4TmpJM2ZFeElNVGd4TUJvTENJQ3hEaEFDR2dOUVRFNDRISERXK1FNPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIktSSyIsbnVsbCwiTE8iLCIzOTExIl0sWyJLUksiLCIyMDI1LTA5LTMwIiwiTVVDIixudWxsLCJMSCIsIjE2MjciXSxbIk1VQyIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTgxMCJdXV0="
+        }
+    ],
     "other_flights": [
         {
             "flights": [
@@ -28,101 +525,855 @@
                     "departure_airport": {
                         "name": "Lotnisko Chopina Warszawa",
                         "id": "WAW",
-                        "time": "2025-09-11 19:45"
+                        "time": "2025-09-29 22:45"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Kopenhaga-Kastrup",
-                        "id": "CPH",
-                        "time": "2025-09-11 21:05"
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-29 23:40"
                     },
-                    "duration": 80,
-                    "airplane": "Embraer 195",
-                    "airline": "Scandinavian Airlines",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
-                    "travel_class": "Business Class",
-                    "flight_number": "SK 2752",
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3849",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 66 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-30 16:55"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 18:05"
+                    },
+                    "duration": 70,
+                    "airplane": "Canadair RJ 900",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1633",
                     "legroom": "79 cm",
                     "extensions": [
                         "Average legroom (79 cm)",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 132 kg"
+                        "Carbon emissions estimate: 81 kg"
                     ],
-                    "plane_and_crew_by": "Sas Link"
+                    "plane_and_crew_by": "Lufthansa CityLine"
                 },
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Kopenhaga-Kastrup",
-                        "id": "CPH",
-                        "time": "2025-09-12 07:55"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Zurych-Kloten",
-                        "id": "ZRH",
-                        "time": "2025-09-12 09:40"
-                    },
-                    "duration": 105,
-                    "airplane": "Boeing 737",
-                    "airline": "Scandinavian Airlines",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
-                    "travel_class": "Premium Economy",
-                    "flight_number": "SK 601",
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "Carbon emissions estimate: 95 kg"
-                    ],
-                    "plane_and_crew_by": "Jettime A/S"
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Zurych-Kloten",
-                        "id": "ZRH",
-                        "time": "2025-09-12 12:20"
+                        "name": "Port lotniczy Monachium",
+                        "id": "MUC",
+                        "time": "2025-09-30 19:30"
                     },
                     "arrival_airport": {
                         "name": "Port lotniczy Barcelona",
                         "id": "BCN",
-                        "time": "2025-09-12 14:05"
+                        "time": "2025-09-30 21:40"
                     },
-                    "duration": 105,
-                    "airplane": "Airbus A321neo",
-                    "airline": "SWISS",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
+                    "duration": 130,
+                    "airplane": "Airbus A320",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
                     "travel_class": "Economy",
-                    "flight_number": "LX 1954",
+                    "flight_number": "LH 1818",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 103 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 1035,
+                    "name": "Port Lotniczy Wrocław S.A.",
+                    "id": "WRO",
+                    "overnight": true
+                },
+                {
+                    "duration": 85,
+                    "name": "Port lotniczy Monachium",
+                    "id": "MUC"
+                }
+            ],
+            "total_duration": 1375,
+            "carbon_emissions": {
+                "this_flight": 251000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 16
+            },
+            "price": 1709,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE5EbDhURWd4TmpNemZFeElNVGd4T0JvTENKUzNDaEFDR2dOUVRFNDRISERlN2dJPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIldSTyIsbnVsbCwiTE8iLCIzODQ5Il0sWyJXUk8iLCIyMDI1LTA5LTMwIiwiTVVDIixudWxsLCJMSCIsIjE2MzMiXSxbIk1VQyIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTgxOCJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3849",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 66 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-30 14:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 16:05"
+                    },
+                    "duration": 80,
+                    "airplane": "Embraer 190",
+                    "airline": "Air Dolomiti",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+                    "travel_class": "Economy",
+                    "flight_number": "EN 8765",
+                    "ticket_also_sold_by": [
+                        "Lufthansa"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 91 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 17:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 19:45"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1136",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 114 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 905,
+                    "name": "Port Lotniczy Wrocław S.A.",
+                    "id": "WRO",
+                    "overnight": true
+                },
+                {
+                    "duration": 95,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 1260,
+            "carbon_emissions": {
+                "this_flight": 272000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 26
+            },
+            "price": 1743,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE5EbDhSVTQ0TnpZMWZFeElNVEV6TmhvTENOelJDaEFDR2dOUVRFNDRISENFOWdJPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIldSTyIsbnVsbCwiTE8iLCIzODQ5Il0sWyJXUk8iLCIyMDI1LTA5LTMwIiwiRlJBIixudWxsLCJFTiIsIjg3NjUiXSxbIkZSQSIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTEzNiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3849",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 66 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-30 10:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 12:05"
+                    },
+                    "duration": 80,
+                    "airplane": "Embraer 190",
+                    "airline": "Air Dolomiti",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+                    "travel_class": "Economy",
+                    "flight_number": "EN 8767",
+                    "ticket_also_sold_by": [
+                        "Lufthansa"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 91 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 17:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 19:45"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1136",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 114 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 665,
+                    "name": "Port Lotniczy Wrocław S.A.",
+                    "id": "WRO",
+                    "overnight": true
+                },
+                {
+                    "duration": 335,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 1260,
+            "carbon_emissions": {
+                "this_flight": 272000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 26
+            },
+            "price": 1743,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE5EbDhSVTQ0TnpZM2ZFeElNVEV6TmhvTENOelJDaEFDR2dOUVRFNDRISENFOWdJPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIldSTyIsbnVsbCwiTE8iLCIzODQ5Il0sWyJXUk8iLCIyMDI1LTA5LTMwIiwiRlJBIixudWxsLCJFTiIsIjg3NjciXSxbIkZSQSIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTEzNiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3849",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 66 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Wrocław S.A.",
+                        "id": "WRO",
+                        "time": "2025-09-30 06:15"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 07:35"
+                    },
+                    "duration": 80,
+                    "airplane": "Embraer 190",
+                    "airline": "Air Dolomiti",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+                    "travel_class": "Economy",
+                    "flight_number": "EN 8769",
+                    "ticket_also_sold_by": [
+                        "Lufthansa"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 91 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 17:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 19:45"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1136",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Wi-Fi for a fee",
+                        "Carbon emissions estimate: 114 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 395,
+                    "name": "Port Lotniczy Wrocław S.A.",
+                    "id": "WRO",
+                    "overnight": true
+                },
+                {
+                    "duration": 605,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
+                }
+            ],
+            "total_duration": 1260,
+            "carbon_emissions": {
+                "this_flight": 272000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 26
+            },
+            "price": 1743,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE5EbDhSVTQ0TnpZNWZFeElNVEV6TmhvTENOelJDaEFDR2dOUVRFNDRISENFOWdJPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIldSTyIsbnVsbCwiTE8iLCIzODQ5Il0sWyJXUk8iLCIyMDI1LTA5LTMwIiwiRlJBIixudWxsLCJFTiIsIjg3NjkiXSxbIkZSQSIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTEzNiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:50"
+                    },
+                    "arrival_airport": {
+                        "name": "Międzynarodowy Port Lotniczy Katowice",
+                        "id": "KTW",
+                        "time": "2025-09-29 23:40"
+                    },
+                    "duration": 50,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3879",
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 57 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Międzynarodowy Port Lotniczy Katowice",
+                        "id": "KTW",
+                        "time": "2025-09-30 06:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 07:50"
+                    },
+                    "duration": 100,
+                    "airplane": "Embraer 190",
+                    "airline": "Air Dolomiti",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/EN.png",
+                    "travel_class": "Economy",
+                    "flight_number": "EN 8763",
+                    "ticket_also_sold_by": [
+                        "Lufthansa"
+                    ],
+                    "legroom": "76 cm",
+                    "extensions": [
+                        "Average legroom (76 cm)",
+                        "Carbon emissions estimate: 108 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Frankfurt",
+                        "id": "FRA",
+                        "time": "2025-09-30 14:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 16:15"
+                    },
+                    "duration": 125,
+                    "airplane": "Airbus A321",
+                    "airline": "Lufthansa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LH 1132",
                     "legroom": "74 cm",
                     "extensions": [
                         "Below average legroom (74 cm)",
-                        "Carbon emissions estimate: 88 kg"
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 101 kg"
                     ],
                     "often_delayed_by_over_30_min": true
                 }
             ],
             "layovers": [
                 {
-                    "duration": 650,
-                    "name": "Port lotniczy Kopenhaga-Kastrup",
-                    "id": "CPH",
+                    "duration": 390,
+                    "name": "Międzynarodowy Port Lotniczy Katowice",
+                    "id": "KTW",
                     "overnight": true
                 },
                 {
-                    "duration": 160,
-                    "name": "Port lotniczy Zurych-Kloten",
-                    "id": "ZRH"
+                    "duration": 380,
+                    "name": "Port lotniczy Frankfurt",
+                    "id": "FRA"
                 }
             ],
-            "total_duration": 1100,
+            "total_duration": 1045,
             "carbon_emissions": {
-                "this_flight": 316000,
-                "typical_for_this_route": 214000,
-                "difference_percent": 48
+                "this_flight": 268000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 24
             },
-            "price": 11978,
+            "price": 2001,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
-            "departure_token": "WyJDalJJT0hGWlJVSktZMHhDVUdkQlEyWkdRVUZDUnkwdExTMHRMUzB0TFdObmNHNHhNMEZCUVVGQlIycERORm80VDJsRFZuTkJFaE5UU3pJM05USjhVMHMyTURGOFRGZ3hPVFUwR2dzSXVZMUpFQUlhQTFCTVRqZ2NjT0NURkE9PSIsW1siV0FXIiwiMjAyNS0wOS0xMSIsIkNQSCIsbnVsbCwiU0siLCIyNzUyIl0sWyJDUEgiLCIyMDI1LTA5LTEyIiwiWlJIIixudWxsLCJTSyIsIjYwMSJdLFsiWlJIIiwiMjAyNS0wOS0xMiIsIkJDTiIsbnVsbCwiTFgiLCIxOTU0Il1dXQ=="
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNE56bDhSVTQ0TnpZemZFeElNVEV6TWhvTENPNmFEQkFDR2dOUVRFNDRISENqclFNPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIktUVyIsbnVsbCwiTE8iLCIzODc5Il0sWyJLVFciLCIyMDI1LTA5LTMwIiwiRlJBIixudWxsLCJFTiIsIjg3NjMiXSxbIkZSQSIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIkxIIiwiMTEzMiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Lotnisko Chopina Warszawa",
+                        "id": "WAW",
+                        "time": "2025-09-29 22:35"
+                    },
+                    "arrival_airport": {
+                        "name": "Port Lotniczy Poznań-Ławica im. Henryka Wieniawskiego",
+                        "id": "POZ",
+                        "time": "2025-09-29 23:30"
+                    },
+                    "duration": 55,
+                    "airplane": "Embraer 175",
+                    "airline": "LOT",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
+                    "travel_class": "Economy",
+                    "flight_number": "LO 3941",
+                    "ticket_also_sold_by": [
+                        "Scandinavian Airlines"
+                    ],
+                    "legroom": "74 cm",
+                    "extensions": [
+                        "Below average legroom (74 cm)",
+                        "Carbon emissions estimate: 58 kg"
+                    ]
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port Lotniczy Poznań-Ławica im. Henryka Wieniawskiego",
+                        "id": "POZ",
+                        "time": "2025-09-30 06:15"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Kopenhaga-Kastrup",
+                        "id": "CPH",
+                        "time": "2025-09-30 07:20"
+                    },
+                    "duration": 65,
+                    "airplane": "Canadair RJ 900",
+                    "airline": "Scandinavian Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SK 2756",
+                    "legroom": "79 cm",
+                    "extensions": [
+                        "Average legroom (79 cm)",
+                        "Carbon emissions estimate: 74 kg"
+                    ],
+                    "plane_and_crew_by": "Cityjet"
+                },
+                {
+                    "departure_airport": {
+                        "name": "Port lotniczy Kopenhaga-Kastrup",
+                        "id": "CPH",
+                        "time": "2025-09-30 15:20"
+                    },
+                    "arrival_airport": {
+                        "name": "Port lotniczy Barcelona",
+                        "id": "BCN",
+                        "time": "2025-09-30 18:10"
+                    },
+                    "duration": 170,
+                    "airplane": "Airbus A320neo",
+                    "airline": "Scandinavian Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SK 1585",
+                    "legroom": "74 cm",
+                    "extensions": [
+                        "Below average legroom (74 cm)",
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 133 kg"
+                    ]
+                }
+            ],
+            "layovers": [
+                {
+                    "duration": 405,
+                    "name": "Port Lotniczy Poznań-Ławica im. Henryka Wieniawskiego",
+                    "id": "POZ",
+                    "overnight": true
+                },
+                {
+                    "duration": 480,
+                    "name": "Port lotniczy Kopenhaga-Kastrup",
+                    "id": "CPH"
+                }
+            ],
+            "total_duration": 1175,
+            "carbon_emissions": {
+                "this_flight": 267000,
+                "typical_for_this_route": 216000,
+                "difference_percent": 24
+            },
+            "price": 10035,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJVGt4R2FXaHRjbHBpVVhOQlFVeGFXRkZDUnkwdExTMHRMUzB0TFhscFltVmlOMEZCUVVGQlIycGhOREZSVERScmEzbEJFaFJNVHpNNU5ERjhVMHN5TnpVMmZGTkxNVFU0TlJvTENKeWZQUkFDR2dOUVRFNDRISENkNlJBPSIsW1siV0FXIiwiMjAyNS0wOS0yOSIsIlBPWiIsbnVsbCwiTE8iLCIzOTQxIl0sWyJQT1oiLCIyMDI1LTA5LTMwIiwiQ1BIIixudWxsLCJTSyIsIjI3NTYiXSxbIkNQSCIsIjIwMjUtMDktMzAiLCJCQ04iLG51bGwsIlNLIiwiMTU4NSJdXV0="
         }
     ],
+    "price_insights": {
+        "lowest_price": 1709,
+        "price_level": "high",
+        "typical_price_range": [
+            610,
+            830
+        ],
+        "price_history": [
+            [
+                1753912800,
+                601
+            ],
+            [
+                1753999200,
+                646
+            ],
+            [
+                1754085600,
+                601
+            ],
+            [
+                1754172000,
+                637
+            ],
+            [
+                1754258400,
+                637
+            ],
+            [
+                1754344800,
+                620
+            ],
+            [
+                1754431200,
+                621
+            ],
+            [
+                1754517600,
+                629
+            ],
+            [
+                1754604000,
+                590
+            ],
+            [
+                1754690400,
+                590
+            ],
+            [
+                1754776800,
+                626
+            ],
+            [
+                1754863200,
+                644
+            ],
+            [
+                1754949600,
+                618
+            ],
+            [
+                1755036000,
+                591
+            ],
+            [
+                1755122400,
+                644
+            ],
+            [
+                1755208800,
+                717
+            ],
+            [
+                1755295200,
+                678
+            ],
+            [
+                1755381600,
+                704
+            ],
+            [
+                1755468000,
+                704
+            ],
+            [
+                1755554400,
+                644
+            ],
+            [
+                1755640800,
+                674
+            ],
+            [
+                1755727200,
+                674
+            ],
+            [
+                1755813600,
+                703
+            ],
+            [
+                1755900000,
+                727
+            ],
+            [
+                1755986400,
+                720
+            ],
+            [
+                1756072800,
+                705
+            ],
+            [
+                1756159200,
+                720
+            ],
+            [
+                1756245600,
+                721
+            ],
+            [
+                1756332000,
+                726
+            ],
+            [
+                1756418400,
+                726
+            ],
+            [
+                1756504800,
+                726
+            ],
+            [
+                1756591200,
+                726
+            ],
+            [
+                1756677600,
+                726
+            ],
+            [
+                1756764000,
+                726
+            ],
+            [
+                1756850400,
+                726
+            ],
+            [
+                1756936800,
+                726
+            ],
+            [
+                1757023200,
+                725
+            ],
+            [
+                1757109600,
+                725
+            ],
+            [
+                1757196000,
+                725
+            ],
+            [
+                1757282400,
+                725
+            ],
+            [
+                1757368800,
+                725
+            ],
+            [
+                1757455200,
+                758
+            ],
+            [
+                1757541600,
+                725
+            ],
+            [
+                1757628000,
+                788
+            ],
+            [
+                1757714400,
+                759
+            ],
+            [
+                1757800800,
+                759
+            ],
+            [
+                1757887200,
+                721
+            ],
+            [
+                1757973600,
+                777
+            ],
+            [
+                1758060000,
+                777
+            ],
+            [
+                1758146400,
+                831
+            ],
+            [
+                1758232800,
+                736
+            ],
+            [
+                1758319200,
+                832
+            ],
+            [
+                1758405600,
+                758
+            ],
+            [
+                1758492000,
+                786
+            ],
+            [
+                1758578400,
+                849
+            ],
+            [
+                1758664800,
+                982
+            ],
+            [
+                1758751200,
+                940
+            ],
+            [
+                1758837600,
+                950
+            ],
+            [
+                1758924000,
+                940
+            ],
+            [
+                1759010400,
+                940
+            ],
+            [
+                1759096800,
+                1709
+            ]
+        ]
+    },
     "airports": [
         {
             "departure": [

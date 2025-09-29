@@ -20,25 +20,22 @@ class Database:
     # Nie potrzebujemy już __init__ i __del__ do zarządzania sesją!
     # Flask-SQLAlchemy robi to za nas automatycznie w tle dla każdego żądania.
 
-    def users_query(self, email: str | None, telegram_tag: str | None) -> tuple[int | None, bool]:
+    def users_query(self, email: str | None) -> tuple[int | None, bool]:
         """Znajduje lub tworzy użytkownika i zwraca jego ID."""
         try:
             query_filter = []
             if email:
                 query_filter.append(User.email == email)
-            if telegram_tag:
-                query_filter.append(User.telegram_tag == telegram_tag)
 
             # Używamy db.session, które jest zarządzane przez Flask-SQLAlchemy
             user = db.session.query(User).filter(or_(*query_filter)).first()
 
             if user:
                 if email and not user.email: user.email = email
-                if telegram_tag and not user.telegram_tag: user.telegram_tag = telegram_tag
                 db.session.commit()
                 return user.user_id, True
             else:
-                new_user = User(email=email, telegram_tag=telegram_tag)
+                new_user = User(email=email)
                 db.session.add(new_user)
                 db.session.commit()
                 return new_user.user_id, True

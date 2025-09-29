@@ -166,7 +166,6 @@ class AirportAutocomplete {
     const code = suggestion.dataset.code;
     const cityText = suggestion.querySelector(".airport-location").textContent;
     const city = cityText.split(",")[0];
-
     this.input.value = `${city} (${code})`;
     this.selectedAirportCode = code;
     this.hideSuggestions();

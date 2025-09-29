@@ -39,7 +39,13 @@ h1 {
     font-weight: 300;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+h5 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: medium;
+    font-weight: bolder;
+}
 /* Form Styles */
 .form-group {
     margin-bottom: 25px;
