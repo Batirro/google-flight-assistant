@@ -4,3 +4,8 @@ google-flight
 *.json
 /logic/__pycache__
 TODO.md
+.venv
+.zed
+.ropeproject
+/__pycache__
+/config/__pycache__

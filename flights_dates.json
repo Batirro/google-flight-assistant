@@ -1,14 +1,14 @@
 {
     "search_metadata": {
-        "id": "68bf2539529e4b72fda0e174",
+        "id": "68c2e19f550cc4b7fe8cba97",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/68bf2539529e4b72fda0e174.json",
-        "created_at": "2025-09-08 18:49:29 UTC",
-        "processed_at": "2025-09-08 18:49:29 UTC",
-        "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTA5agcIARIDV0FXcgcIARIDQkNOGh4SCjIwMjUtMDktMTJqBwgBEgNCQ05yBwgBEgNXQVdCAQFIAXABmAEB&tfu=EgIIAQ",
-        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68bf2539529e4b72fda0e174.html",
-        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68bf2539529e4b72fda0e174.prettify",
-        "total_time_taken": 0.56
+        "json_endpoint": "https://serpapi.com/searches/359be7ea5a1aff5d/68c2e19f550cc4b7fe8cba97.json",
+        "created_at": "2025-09-11 14:50:07 UTC",
+        "processed_at": "2025-09-11 14:50:07 UTC",
+        "google_flights_url": "https://www.google.com/travel/flights?hl=pl&gl=us&curr=PLN&tfs=CBwQAhoeEgoyMDI1LTA5LTExagcIARIDV0FXcgcIARIDQkNOGh4SCjIwMjUtMDktMThqBwgBEgNCQ05yBwgBEgNXQVdCAQFIAnABmAEB&tfu=EgIIAQ",
+        "raw_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68c2e19f550cc4b7fe8cba97.html",
+        "prettify_html_file": "https://serpapi.com/searches/359be7ea5a1aff5d/68c2e19f550cc4b7fe8cba97.prettify",
+        "total_time_taken": 1.13
     },
     "search_parameters": {
         "engine": "google_flights",
@@ -16,154 +16,11 @@
         "gl": "us",
         "departure_id": "WAW",
         "arrival_id": "BCN",
-        "outbound_date": "2025-09-09",
-        "return_date": "2025-09-12",
-        "travel_class": 1,
+        "outbound_date": "2025-09-11",
+        "return_date": "2025-09-18",
+        "travel_class": 2,
         "currency": "PLN"
     },
-    "best_flights": [
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 10:15"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Kopenhaga-Kastrup",
-                        "id": "CPH",
-                        "time": "2025-09-09 11:35"
-                    },
-                    "duration": 80,
-                    "airplane": "Airbus A320neo",
-                    "airline": "Scandinavian Airlines",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
-                    "travel_class": "Economy",
-                    "flight_number": "SK 752",
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 67 kg"
-                    ],
-                    "plane_and_crew_by": "Sas Connect"
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Kopenhaga-Kastrup",
-                        "id": "CPH",
-                        "time": "2025-09-09 15:20"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 18:10"
-                    },
-                    "duration": 170,
-                    "airplane": "Airbus A320neo",
-                    "airline": "Scandinavian Airlines",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
-                    "travel_class": "Economy",
-                    "flight_number": "SK 1585",
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "In-seat USB outlet",
-                        "Carbon emissions estimate: 133 kg"
-                    ]
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 225,
-                    "name": "Port lotniczy Kopenhaga-Kastrup",
-                    "id": "CPH"
-                }
-            ],
-            "total_duration": 475,
-            "carbon_emissions": {
-                "this_flight": 201000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -6
-            },
-            "price": 832,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZ3hUU3pjMU1ueFRTekUxT0RVYUN3aUFpZ1VRQWhvRFVFeE9PQnh3NDdNQiIsW1siV0FXIiwiMjAyNS0wOS0wOSIsIkNQSCIsbnVsbCwiU0siLCI3NTIiXSxbIkNQSCIsIjIwMjUtMDktMDkiLCJCQ04iLG51bGwsIlNLIiwiMTU4NSJdXV0="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 05:35"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 08:40"
-                    },
-                    "duration": 185,
-                    "airplane": "Airbus A321neo",
-                    "airline": "Wizz Air",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
-                    "travel_class": "Economy",
-                    "flight_number": "W6 1475",
-                    "extensions": [
-                        "Carbon emissions estimate: 122 kg"
-                    ]
-                }
-            ],
-            "total_duration": 185,
-            "carbon_emissions": {
-                "this_flight": 122000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -43
-            },
-            "price": 1009,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZ1pYTmpFME56VWFDd2lrbEFZUUFob0RVRXhPT0J4d2c5b0IiLFtbIldBVyIsIjIwMjUtMDktMDkiLCJCQ04iLG51bGwsIlc2IiwiMTQ3NSJdXV0="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 15:55"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 19:00"
-                    },
-                    "duration": 185,
-                    "airplane": "Airbus A321neo",
-                    "airline": "Wizz Air",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
-                    "travel_class": "Economy",
-                    "flight_number": "W6 1477",
-                    "extensions": [
-                        "Carbon emissions estimate: 122 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "total_duration": 185,
-            "carbon_emissions": {
-                "this_flight": 122000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -43
-            },
-            "price": 1059,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/W6.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZ1pYTmpFME56Y2FDd2lzdXdZUUFob0RVRXhPT0J4dzZ1UUIiLFtbIldBVyIsIjIwMjUtMDktMDkiLCJCQ04iLG51bGwsIlc2IiwiMTQ3NyJdXV0="
-        }
-    ],
     "other_flights": [
         {
             "flights": [
@@ -171,720 +28,101 @@
                     "departure_airport": {
                         "name": "Lotnisko Chopina Warszawa",
                         "id": "WAW",
-                        "time": "2025-09-09 08:40"
+                        "time": "2025-09-11 19:45"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Monachium",
-                        "id": "MUC",
-                        "time": "2025-09-09 10:15"
+                        "name": "Port lotniczy Kopenhaga-Kastrup",
+                        "id": "CPH",
+                        "time": "2025-09-11 21:05"
                     },
-                    "duration": 95,
-                    "airplane": "Canadair RJ 900",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1611",
+                    "duration": 80,
+                    "airplane": "Embraer 195",
+                    "airline": "Scandinavian Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+                    "travel_class": "Business Class",
+                    "flight_number": "SK 2752",
                     "legroom": "79 cm",
                     "extensions": [
                         "Average legroom (79 cm)",
-                        "Carbon emissions estimate: 111 kg"
-                    ],
-                    "plane_and_crew_by": "Lufthansa CityLine"
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Monachium",
-                        "id": "MUC",
-                        "time": "2025-09-09 15:45"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 17:55"
-                    },
-                    "duration": 130,
-                    "airplane": "Airbus A220-300 Passenger",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1816",
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Carbon emissions estimate: 121 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true,
-                    "plane_and_crew_by": "Air Baltic"
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 330,
-                    "name": "Port lotniczy Monachium",
-                    "id": "MUC"
-                }
-            ],
-            "total_duration": 555,
-            "carbon_emissions": {
-                "this_flight": 233000,
-                "typical_for_this_route": 214000,
-                "difference_percent": 9
-            },
-            "price": 1023,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZzFNU0RFMk1URjhURWd4T0RFMkdnc0lsSjhHRUFJYUExQk1UamdjY0lUZEFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDkiLCJNVUMiLG51bGwsIkxIIiwiMTYxMSJdLFsiTVVDIiwiMjAyNS0wOS0wOSIsIkJDTiIsbnVsbCwiTEgiLCIxODE2Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 15:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Wiedeń-Schwechat",
-                        "id": "VIE",
-                        "time": "2025-09-09 16:15"
-                    },
-                    "duration": 75,
-                    "airplane": "Embraer 195",
-                    "airline": "Austrian",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
-                    "travel_class": "Economy",
-                    "flight_number": "OS 624",
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "Carbon emissions estimate: 81 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Wiedeń-Schwechat",
-                        "id": "VIE",
-                        "time": "2025-09-09 17:30"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 19:50"
-                    },
-                    "duration": 140,
-                    "airplane": "Airbus A321",
-                    "airline": "Austrian",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
-                    "travel_class": "Economy",
-                    "flight_number": "OS 393",
-                    "legroom": "74 cm",
-                    "extensions": [
-                        "Below average legroom (74 cm)",
-                        "Wi-Fi for a fee",
                         "In-seat USB outlet",
-                        "Carbon emissions estimate: 133 kg"
+                        "Carbon emissions estimate: 132 kg"
                     ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 75,
-                    "name": "Port lotniczy Wiedeń-Schwechat",
-                    "id": "VIE"
-                }
-            ],
-            "total_duration": 290,
-            "carbon_emissions": {
-                "this_flight": 215000,
-                "typical_for_this_route": 214000,
-                "difference_percent": 0
-            },
-            "price": 1026,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/OS.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZ3RQVXpZeU5IeFBVek01TXhvTENQR2dCaEFDR2dOUVRFNDRISERCM1FFPSIsW1siV0FXIiwiMjAyNS0wOS0wOSIsIlZJRSIsbnVsbCwiT1MiLCI2MjQiXSxbIlZJRSIsIjIwMjUtMDktMDkiLCJCQ04iLG51bGwsIk9TIiwiMzkzIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 06:35"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Frankfurt",
-                        "id": "FRA",
-                        "time": "2025-09-09 08:25"
-                    },
-                    "duration": 110,
-                    "airplane": "Airbus A320",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1353",
-                    "ticket_also_sold_by": [
-                        "LOT"
-                    ],
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Carbon emissions estimate: 91 kg"
-                    ]
+                    "plane_and_crew_by": "Sas Link"
                 },
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Frankfurt",
-                        "id": "FRA",
-                        "time": "2025-09-09 09:50"
+                        "name": "Port lotniczy Kopenhaga-Kastrup",
+                        "id": "CPH",
+                        "time": "2025-09-12 07:55"
                     },
                     "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 11:55"
+                        "name": "Port lotniczy Zurych-Kloten",
+                        "id": "ZRH",
+                        "time": "2025-09-12 09:40"
                     },
-                    "duration": 125,
-                    "airplane": "Airbus A321",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1126",
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 114 kg"
-                    ]
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 85,
-                    "name": "Port lotniczy Frankfurt",
-                    "id": "FRA"
-                }
-            ],
-            "total_duration": 320,
-            "carbon_emissions": {
-                "this_flight": 206000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -4
-            },
-            "price": 1057,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZzFNU0RFek5UTjhURWd4TVRJMkdnc0kwN2tHRUFJYUExQk1UamdjY0s3a0FRPT0iLFtbIldBVyIsIjIwMjUtMDktMDkiLCJGUkEiLG51bGwsIkxIIiwiMTM1MyJdLFsiRlJBIiwiMjAyNS0wOS0wOSIsIkJDTiIsbnVsbCwiTEgiLCIxMTI2Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 09:40"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Frankfurt",
-                        "id": "FRA",
-                        "time": "2025-09-09 11:30"
-                    },
-                    "duration": 110,
-                    "airplane": "Airbus A320",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1347",
-                    "ticket_also_sold_by": [
-                        "LOT"
-                    ],
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Carbon emissions estimate: 91 kg"
-                    ]
-                },
-                {
-                    "departure_airport": {
-                        "name": "Port lotniczy Frankfurt",
-                        "id": "FRA",
-                        "time": "2025-09-09 13:25"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 15:30"
-                    },
-                    "duration": 125,
-                    "airplane": "Airbus A321",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1130",
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 114 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "layovers": [
-                {
-                    "duration": 115,
-                    "name": "Port lotniczy Frankfurt",
-                    "id": "FRA"
-                }
-            ],
-            "total_duration": 350,
-            "carbon_emissions": {
-                "this_flight": 206000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -4
-            },
-            "price": 1057,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZzFNU0RFek5EZDhURWd4TVRNd0dnc0kwN2tHRUFJYUExQk1UamdjY0s3a0FRPT0iLFtbIldBVyIsIjIwMjUtMDktMDkiLCJGUkEiLG51bGwsIkxIIiwiMTM0NyJdLFsiRlJBIiwiMjAyNS0wOS0wOSIsIkJDTiIsbnVsbCwiTEgiLCIxMTMwIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 06:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Monachium",
-                        "id": "MUC",
-                        "time": "2025-09-09 07:35"
-                    },
-                    "duration": 95,
-                    "airplane": "Airbus A319",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1617",
-                    "ticket_also_sold_by": [
-                        "LOT"
-                    ],
+                    "duration": 105,
+                    "airplane": "Boeing 737",
+                    "airline": "Scandinavian Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SK.png",
+                    "travel_class": "Premium Economy",
+                    "flight_number": "SK 601",
                     "legroom": "74 cm",
                     "extensions": [
                         "Below average legroom (74 cm)",
-                        "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 94 kg"
+                        "Carbon emissions estimate: 95 kg"
                     ],
-                    "plane_and_crew_by": "Lufthansa CityLine"
+                    "plane_and_crew_by": "Jettime A/S"
                 },
                 {
                     "departure_airport": {
-                        "name": "Port lotniczy Monachium",
-                        "id": "MUC",
-                        "time": "2025-09-09 09:05"
+                        "name": "Port lotniczy Zurych-Kloten",
+                        "id": "ZRH",
+                        "time": "2025-09-12 12:20"
                     },
                     "arrival_airport": {
                         "name": "Port lotniczy Barcelona",
                         "id": "BCN",
-                        "time": "2025-09-09 11:15"
+                        "time": "2025-09-12 14:05"
                     },
-                    "duration": 130,
-                    "airplane": "Airbus A321",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
+                    "duration": 105,
+                    "airplane": "Airbus A321neo",
+                    "airline": "SWISS",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LX.png",
                     "travel_class": "Economy",
-                    "flight_number": "LH 1810",
-                    "legroom": "76 cm",
+                    "flight_number": "LX 1954",
+                    "legroom": "74 cm",
                     "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 116 kg"
-                    ]
+                        "Below average legroom (74 cm)",
+                        "Carbon emissions estimate: 88 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
                 }
             ],
             "layovers": [
                 {
-                    "duration": 90,
-                    "name": "Port lotniczy Monachium",
-                    "id": "MUC"
-                }
-            ],
-            "total_duration": 315,
-            "carbon_emissions": {
-                "this_flight": 211000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -1
-            },
-            "price": 1098,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZzFNU0RFMk1UZDhURWd4T0RFd0dnc0k1TmtHRUFJYUExQk1UamdjY0ovdEFRPT0iLFtbIldBVyIsIjIwMjUtMDktMDkiLCJNVUMiLG51bGwsIkxIIiwiMTYxNyJdLFsiTVVDIiwiMjAyNS0wOS0wOSIsIkJDTiIsbnVsbCwiTEgiLCIxODEwIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 17:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Monachium",
-                        "id": "MUC",
-                        "time": "2025-09-09 18:35"
-                    },
-                    "duration": 95,
-                    "airplane": "Airbus A319",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1615",
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 94 kg"
-                    ],
-                    "plane_and_crew_by": "Lufthansa CityLine"
+                    "duration": 650,
+                    "name": "Port lotniczy Kopenhaga-Kastrup",
+                    "id": "CPH",
+                    "overnight": true
                 },
                 {
-                    "departure_airport": {
-                        "name": "Port lotniczy Monachium",
-                        "id": "MUC",
-                        "time": "2025-09-09 19:30"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 21:40"
-                    },
-                    "duration": 130,
-                    "airplane": "Airbus A321",
-                    "airline": "Lufthansa",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LH 1818",
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "Wi-Fi for a fee",
-                        "Carbon emissions estimate: 116 kg"
-                    ]
+                    "duration": 160,
+                    "name": "Port lotniczy Zurych-Kloten",
+                    "id": "ZRH"
                 }
             ],
-            "layovers": [
-                {
-                    "duration": 55,
-                    "name": "Port lotniczy Monachium",
-                    "id": "MUC"
-                }
-            ],
-            "total_duration": 280,
+            "total_duration": 1100,
             "carbon_emissions": {
-                "this_flight": 211000,
+                "this_flight": 316000,
                 "typical_for_this_route": 214000,
-                "difference_percent": -1
+                "difference_percent": 48
             },
-            "price": 1251,
+            "price": 11978,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LH.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZzFNU0RFMk1UVjhURWd4T0RFNEdnc0k3ZEFIRUFJYUExQk1UamdjY0plT0FnPT0iLFtbIldBVyIsIjIwMjUtMDktMDkiLCJNVUMiLG51bGwsIkxIIiwiMTYxNSJdLFsiTVVDIiwiMjAyNS0wOS0wOSIsIkJDTiIsbnVsbCwiTEgiLCIxODE4Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Lotnisko Chopina Warszawa",
-                        "id": "WAW",
-                        "time": "2025-09-09 09:20"
-                    },
-                    "arrival_airport": {
-                        "name": "Port lotniczy Barcelona",
-                        "id": "BCN",
-                        "time": "2025-09-09 12:30"
-                    },
-                    "duration": 190,
-                    "airplane": "Boeing 737",
-                    "airline": "LOT",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
-                    "travel_class": "Economy",
-                    "flight_number": "LO 437",
-                    "legroom": "76 cm",
-                    "extensions": [
-                        "Average legroom (76 cm)",
-                        "In-seat power outlet",
-                        "Stream media to your device",
-                        "Carbon emissions estimate: 154 kg"
-                    ]
-                }
-            ],
-            "total_duration": 190,
-            "carbon_emissions": {
-                "this_flight": 155000,
-                "typical_for_this_route": 214000,
-                "difference_percent": -28
-            },
-            "price": 1679,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/LO.png",
-            "departure_token": "WyJDalJJVDFsUE9USk5hVGN4WVRCQlFVczFTRkZDUnkwdExTMHRMUzB0TFhaMGJtb3hPRUZCUVVGQlIybGZTbFJ2UVZOcE9ESkJFZ1ZNVHpRek54b0xDTnlmQ2hBQ0dnTlFURTQ0SEhEbTZnST0iLFtbIldBVyIsIjIwMjUtMDktMDkiLCJCQ04iLG51bGwsIkxPIiwiNDM3Il1dXQ=="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+            "departure_token": "WyJDalJJT0hGWlJVSktZMHhDVUdkQlEyWkdRVUZDUnkwdExTMHRMUzB0TFdObmNHNHhNMEZCUVVGQlIycERORm80VDJsRFZuTkJFaE5UU3pJM05USjhVMHMyTURGOFRGZ3hPVFUwR2dzSXVZMUpFQUlhQTFCTVRqZ2NjT0NURkE9PSIsW1siV0FXIiwiMjAyNS0wOS0xMSIsIkNQSCIsbnVsbCwiU0siLCIyNzUyIl0sWyJDUEgiLCIyMDI1LTA5LTEyIiwiWlJIIixudWxsLCJTSyIsIjYwMSJdLFsiWlJIIiwiMjAyNS0wOS0xMiIsIkJDTiIsbnVsbCwiTFgiLCIxOTU0Il1dXQ=="
         }
     ],
-    "price_insights": {
-        "lowest_price": 832,
-        "price_level": "high",
-        "typical_price_range": [
-            570,
-            810
-        ],
-        "price_history": [
-            [
-                1752098400,
-                410
-            ],
-            [
-                1752184800,
-                429
-            ],
-            [
-                1752271200,
-                429
-            ],
-            [
-                1752357600,
-                429
-            ],
-            [
-                1752444000,
-                429
-            ],
-            [
-                1752530400,
-                456
-            ],
-            [
-                1752616800,
-                498
-            ],
-            [
-                1752703200,
-                468
-            ],
-            [
-                1752789600,
-                428
-            ],
-            [
-                1752876000,
-                419
-            ],
-            [
-                1752962400,
-                419
-            ],
-            [
-                1753048800,
-                458
-            ],
-            [
-                1753135200,
-                488
-            ],
-            [
-                1753221600,
-                580
-            ],
-            [
-                1753308000,
-                568
-            ],
-            [
-                1753394400,
-                518
-            ],
-            [
-                1753480800,
-                530
-            ],
-            [
-                1753567200,
-                550
-            ],
-            [
-                1753653600,
-                550
-            ],
-            [
-                1753740000,
-                598
-            ],
-            [
-                1753826400,
-                609
-            ],
-            [
-                1753912800,
-                692
-            ],
-            [
-                1753999200,
-                692
-            ],
-            [
-                1754085600,
-                708
-            ],
-            [
-                1754172000,
-                691
-            ],
-            [
-                1754258400,
-                736
-            ],
-            [
-                1754344800,
-                710
-            ],
-            [
-                1754431200,
-                758
-            ],
-            [
-                1754517600,
-                740
-            ],
-            [
-                1754604000,
-                739
-            ],
-            [
-                1754690400,
-                772
-            ],
-            [
-                1754776800,
-                739
-            ],
-            [
-                1754863200,
-                779
-            ],
-            [
-                1754949600,
-                786
-            ],
-            [
-                1755036000,
-                812
-            ],
-            [
-                1755122400,
-                876
-            ],
-            [
-                1755208800,
-                922
-            ],
-            [
-                1755295200,
-                879
-            ],
-            [
-                1755381600,
-                879
-            ],
-            [
-                1755468000,
-                879
-            ],
-            [
-                1755554400,
-                782
-            ],
-            [
-                1755640800,
-                781
-            ],
-            [
-                1755727200,
-                831
-            ],
-            [
-                1755813600,
-                740
-            ],
-            [
-                1755900000,
-                693
-            ],
-            [
-                1755986400,
-                693
-            ],
-            [
-                1756072800,
-                693
-            ],
-            [
-                1756159200,
-                740
-            ],
-            [
-                1756245600,
-                782
-            ],
-            [
-                1756332000,
-                741
-            ],
-            [
-                1756418400,
-                741
-            ],
-            [
-                1756504800,
-                741
-            ],
-            [
-                1756591200,
-                788
-            ],
-            [
-                1756677600,
-                758
-            ],
-            [
-                1756764000,
-                760
-            ],
-            [
-                1756850400,
-                830
-            ],
-            [
-                1756936800,
-                659
-            ],
-            [
-                1757023200,
-                659
-            ],
-            [
-                1757109600,
-                697
-            ],
-            [
-                1757196000,
-                697
-            ],
-            [
-                1757282400,
-                832
-            ]
-        ]
-    },
     "airports": [
         {
             "departure": [

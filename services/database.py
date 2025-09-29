@@ -56,6 +56,8 @@ class Database:
                 db.session.add(new_pref)
                 db.session.commit()
                 return True
+            else:
+                return True
         except Exception as e:
             db.session.rollback()
             print(f"Błąd przy zapisie preferencji powiadomień: {e}")

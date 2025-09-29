@@ -6,6 +6,7 @@ class User(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(60), unique=True, nullable=True, index=True)
     telegram_tag = db.Column(db.String(60), unique=True, nullable=True, index=True)
+    telegram_chat_id = db.Column(db.String(60), unique=True, nullable=True, index=True)
     flight_preferences = db.relationship("FlightPreference", back_populates="user", cascade="all, delete-orphan")
     notification_preferences = db.relationship("NotificationPreference", back_populates="user", cascade="all, delete-orphan")
 

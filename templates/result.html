@@ -1,10 +1,46 @@
 <!doctype html>
-<html>
+<html lang="pl">
     <head>
-        <title>Twoje preferencje zostały zapisane</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Twoje preferencje zostały zapisane - Flight Assistant</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/styles.css') }}"
+        />
     </head>
     <body>
-        <h1>{{ result }}</h1>
-        <a href="/">Powrót</a>
+        <div class="container">
+            <div class="form-container">
+                <h1>{{ result }}</h1>
+
+                {% if telegram_notify %}
+                <div class="telegram-instructions">
+                    <h2>Powiadomienia Telegram</h2>
+                    <p>
+                        Aby otrzymywać powiadomienia na Telegramie, musisz
+                        najpierw rozpocząć konwersację z naszym botem.
+                    </p>
+                    <ol>
+                        <li>Otwórz aplikację Telegram.</li>
+                        <li>
+                            Wyszukaj bota o nazwie
+                            <strong>@GoogleFlightBot</strong>.
+                        </li>
+                        <li>
+                            Kliknij przycisk "Start" lub wyślij wiadomość
+                            <code>/start</code>.
+                        </li>
+                    </ol>
+                    <p>
+                        To wszystko! Będziesz teraz otrzymywać powiadomienia o
+                        lotach spełniających Twoje kryteria.
+                    </p>
+                </div>
+                {% endif %}
+
+                <a href="/" class="button-link">Powrót do wyszukiwarki</a>
+            </div>
+        </div>
     </body>
 </html>

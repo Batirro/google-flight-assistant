@@ -1,52 +1,147 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Szukaj lotów</title>
-</head>
-<body>
-    <h1>Szukaj lotów</h1>
-    <form method="post">
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Szukaj lotów - Flight Assistant</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/styles.css') }}"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h1>✈️ Szukaj lotów</h1>
 
-        <label>Data początkowa:</label>
-        <input type="date" name="departure_date" required><br>
+                {% if error %}
+                <div class="error">{{ error }}</div>
+                {% endif %}
 
-        <label>Data końcowa:</label>
-        <input type="date" name="return_date" required><br>
+                <form method="post" id="flightForm">
+                    <div class="form-group">
+                        <label for="departure_date">Data wylotu</label>
+                        <input
+                            type="date"
+                            id="departure_date"
+                            name="departure_date"
+                            required
+                        />
+                    </div>
 
-        <label>Lotnisko wylotu (np. WAW):</label>
-        <input type="text" name="departure_airport" required><br>
+                    <div class="form-group">
+                        <label for="return_date">Data powrotu</label>
+                        <input
+                            type="date"
+                            id="return_date"
+                            name="return_date"
+                            required
+                        />
+                    </div>
 
-        <label>Lotnisko przylotu (np. BCN):</label>
-        <input type="text" name="arrival_airport" required><br>
+                    <div class="form-group">
+                        <label for="departure_airport">Lotnisko wylotu</label>
+                        <div class="airport-input-container">
+                            <input
+                                type="text"
+                                id="departure_airport"
+                                name="departure_airport"
+                                placeholder="Wpisz miasto lub kod lotniska (np. Warszawa, WAW)"
+                                autocomplete="off"
+                                required
+                            />
+                            <div
+                                class="airport-suggestions"
+                                id="departure-suggestions"
+                            ></div>
+                        </div>
+                    </div>
 
-        <label>Waluta (np. PLN, EUR):</label>
-        <input type="text" name="currency" required><br>
+                    <div class="form-group">
+                        <label for="arrival_airport">Lotnisko przylotu</label>
+                        <div class="airport-input-container">
+                            <input
+                                type="text"
+                                id="arrival_airport"
+                                name="arrival_airport"
+                                placeholder="Wpisz miasto lub kod lotniska (np. Barcelona, BCN)"
+                                autocomplete="off"
+                                required
+                            />
+                            <div
+                                class="airport-suggestions"
+                                id="arrival-suggestions"
+                            ></div>
+                        </div>
+                    </div>
 
-        <label>Klasa:</label>
-        <select name="seat_class" required>
-            <option value="1">Ekonomiczna</option>
-            <option value="2">Premium Economy</option>
-            <option value="3">Biznes</option>
-            <option value="4">Pierwsza</option>
-        </select><br><br>
+                    <div class="form-group">
+                        <label for="currency">Waluta</label>
+                        <select id="currency" name="currency" required>
+                            <option value="">Wybierz walutę</option>
+                            <option value="PLN">🇵🇱 PLN - Polski złoty</option>
+                            <option value="EUR">🇪🇺 EUR - Euro</option>
+                            <option value="USD">
+                                🇺🇸 USD - Dolar amerykański
+                            </option>
+                            <option value="GBP">🇬🇧 GBP - Funt brytyjski</option>
+                        </select>
+                    </div>
 
-        <fieldset>
-            <legend>Wybierz sposób powiadomień:</legend>
-            
-            <div>
-                <input type="checkbox" id="email_notify" name="email_notify">
-                <label for="email_notify">Email</label>
-                <input type="email" name="email" placeholder="twój@email.com">
+                    <div class="form-group">
+                        <label for="seat_class">Klasa miejsca</label>
+                        <select id="seat_class" name="seat_class" required>
+                            <option value="">Wybierz klasę</option>
+                            <option value="1">💺 Ekonomiczna</option>
+                            <option value="2">🎖️ Premium Economy</option>
+                            <option value="3">💼 Biznes</option>
+                            <option value="4">👑 Pierwsza</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>💬 Powiadomienia</legend>
+
+                        <div class="notification-group">
+                            <input
+                                type="checkbox"
+                                id="email_notify"
+                                name="email_notify"
+                            />
+                            <label for="email_notify">📧 Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="twój@email.com"
+                                id="email_input"
+                                disabled
+                            />
+                        </div>
+
+                        <div class="notification-group">
+                            <input
+                                type="checkbox"
+                                id="telegram_notify"
+                                name="telegram_notify"
+                            />
+                            <label for="telegram_notify">📱 Telegram</label>
+                            <input
+                                type="text"
+                                name="telegram_tag"
+                                placeholder="@twój_tag"
+                                id="telegram_input"
+                                disabled
+                            />
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="submit-btn">
+                        🔍 Szukaj lotów
+                    </button>
+                </form>
             </div>
-            
-            <div>
-                <input type="checkbox" id="telegram_notify" name="telegram_notify">
-                <label for="telegram_notify">Telegram</label>
-                <input type="text" name="telegram_tag" placeholder="@twój_tag">
-            </div>
-        </fieldset><br>
+        </div>
 
-        <button type="submit">Szukaj</button>
-    </form>
-</body>
+        <script src="{{ url_for('static', filename='js/airport-search.js') }}"></script>
+    </body>
 </html>
