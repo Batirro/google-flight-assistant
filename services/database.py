@@ -64,3 +64,14 @@ class Database:
             db.session.rollback()
             print(f"Błąd przy zapisie preferencji lotu: {e}")
             return False
+
+    def delete_flight_preference(self, preference: FlightPreference) -> bool:
+        """Usuwa podaną preferencję lotu z bazy danych."""
+        try:
+            db.session.delete(preference)
+            db.session.commit()
+            return True
+        except Exception as e:
+            db.session.rollback()
+            print(f"Błąd przy usuwaniu preferencji lotu: {e}")
+            return False

@@ -3,6 +3,10 @@ import json
 from dotenv import load_dotenv
 from serpapi import GoogleSearch
 from services.schemas import FlightSearchParams
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+JSON_FILE_PATH = os.path.join(PROJECT_ROOT, 'flights_dates.json')
+
 class DataGrabber:
     def __init__(self):
         load_dotenv()
@@ -29,6 +33,9 @@ class DataGrabber:
     
     def pobierz_dane(self, response):
         data = response
-        with open("flights_dates.json", "w", encoding="utf-8") as file:
+        if "error" in data:
+            print("!!! Otrzymano błąd z API SerpApi !!!")
+            print(data["error"])
+        with open(JSON_FILE_PATH, "w", encoding="utf-8") as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
-        print("✅ Dane zapisane do 'flights_dates.json'")  
+        print(f"✅ Dane zapisane do '{JSON_FILE_PATH}'")
