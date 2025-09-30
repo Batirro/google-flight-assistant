@@ -5,7 +5,7 @@ from logic.airport_search import AirportSearch
 from services.schemas import FlightSearchParams, FlightPreferences, SeatClassEnum
 from config.config import DevelopmentConfig
 from services.db_instance import db
-from typing import Tuple, Optional, Any
+from typing import Tuple, Optional
 
 app = Flask(__name__)
 
@@ -44,21 +44,20 @@ def validate_flight_params(form_data: dict) -> Tuple[Optional[FlightSearchParams
         return None, error_message
 
 
-def validate_notifications(request_form) -> tuple[bool, bool, str, str, str] | tuple[bool, Any, None]:
+def validate_notifications(request_form) -> tuple[str, str] | tuple[str, None]:
     """
     Waliduje dane powiadomień z formularza
 
     Returns:
-        Tuple[email_notify, telegram_notify, email, error_message]
+        Tuple[email, error_message]
     """
-    email_notify = request_form.get("email_notify") == "on"
     email = request_form.get("email", "").strip()
 
     # Walidacja danych kontaktowych
-    if email_notify and not email:
-        return False, False, "", "", "Podaj adres email"
+    if not email:
+        return "", "Podaj adres email"
 
-    return email_notify, email, None
+    return email, None
 
 
 def fetch_flight_data(flight_preferences: FlightSearchParams) -> Tuple[Optional[dict], Optional[str]]:
@@ -83,28 +82,20 @@ def fetch_flight_data(flight_preferences: FlightSearchParams) -> Tuple[Optional[
         return None, f"Błąd podczas pobierania danych lotów: {str(e)}"
 
 
-def save_user_data(database: Database, email_notify: bool,
-                  email: str) -> Tuple[Optional[int], Optional[str]]:
+def save_user_data(database: Database, email: str) -> Tuple[Optional[int], Optional[str]]:
     """
-    Zapisuje dane użytkownika i preferencje powiadomień
+    Zapisuje dane użytkownika
 
     Returns:
         Tuple[user_id lub None, error_message lub None]
     """
     try:
         user_id, user_saved = database.users_query(
-            email=email if email_notify else None,
+            email=email
         )
 
         if not user_saved or user_id is None:
             return None, "Nie udało się zapisać danych użytkownika."
-
-        notification_saved = True
-        if email_notify:
-            notification_saved &= database.notification_preferences_query(user_id, "email")
-
-        if not notification_saved:
-            return None, "Nie udało się zapisać preferencji powiadomień"
 
         return user_id, None
 
@@ -212,7 +203,7 @@ def index():
             return render_template("form.html", error=error)
 
         # 3. Waliduj powiadomienia
-        email_notify, email, error = validate_notifications(request.form)
+        email, error = validate_notifications(request.form)
         if error:
             return render_template("form.html", error=error)
 
@@ -223,7 +214,7 @@ def index():
 
         # 5. Zapisz dane użytkownika
         database = Database()
-        user_id, error = save_user_data(database, email_notify, email)
+        user_id, error = save_user_data(database, email)
         if error:
             return render_template("form.html", error=error)
 
