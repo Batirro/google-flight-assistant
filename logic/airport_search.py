@@ -1,6 +1,6 @@
 from typing import List, Dict, Optional
 from airports import airport_data
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 import time
 import asyncio
 
@@ -11,7 +11,7 @@ class AirportSearch:
         Inicjalizuje serwis wyszukiwania lotnisk używając biblioteki airports-py
         """
         self.airports_cache = None
-        self.translator = Translator()
+        self.translator = GoogleTranslator(source='auto', target='en')
         self.translation_cache = {}  # Cache dla tłumaczeń
         self._load_airports()
 
@@ -27,7 +27,7 @@ class AirportSearch:
 
     async def _translate_to_english(self, text: str) -> List[str]:
         """
-        Tłumaczy tekst na angielski używając Google Translate
+        Tłumaczy tekst na angielski używając deep_translator
 
         Returns:
             Lista wariantów (oryginał + przetłumaczone)
@@ -41,17 +41,12 @@ class AirportSearch:
         variants = [text]  # Zawsze dodaj oryginał
 
         try:
-            # Wykryj język i przetłumacz na angielski
-            detected = await self.translator.detect(text)
-            print(f"🌐 Wykryty język: {detected.lang} dla '{text}'")
+            # Tłumaczenie na angielski
+            translated_text = self.translator.translate(text)
+            translated_text = translated_text.lower()
+            print(f"🔄 Przetłumaczono '{text}' → '{translated_text}'")
 
-            if detected.lang != 'en':  # Tylko jeśli nie jest po angielsku
-                translated = await self.translator.translate(text, dest='en', src=detected.lang)
-                translated_text = translated.text.lower()
-
-                print(f"🔄 Przetłumaczono '{text}' → '{translated_text}'")
-
-                # Dodaj różne warianty tłumaczenia
+            if translated_text != text_lower:
                 variants.extend([
                     translated_text,
                     translated_text.capitalize(),

@@ -57,8 +57,8 @@ def check_flights_and_notify():
                 arrival_airport=preference.arrival_airport,
                 target_departure=preference.target_departure.strftime('%Y-%m-%d'),
                 return_date=preference.return_date.strftime('%Y-%m-%d'),
-                currency="PLN",
-                seat_class="1"
+                currency=preference.currency,
+                seat_class=preference.seat_class,
             )
 
             flight_data_response = data_grabber.api_connector(search_params)
