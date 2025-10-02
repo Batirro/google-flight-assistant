@@ -33,6 +33,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Create a non-root user
 RUN useradd --create-home appuser
 
+RUN mkdir -p /app/data && chmod 755 /app/data
+ENV DATA_DIR=/app/data
+
 # Add user's local bin to PATH
 ENV PATH="/home/appuser/.local/bin:${PATH}"
 
