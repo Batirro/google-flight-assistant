@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 from serpapi import GoogleSearch
 from pathlib import Path
 from services.schemas import FlightSearchParams
-# TODO: Fix flights_data.json file reading for something docker compatible
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 JSON_FILE_PATH = os.path.join(PROJECT_ROOT, 'flights_dates.json')
 
