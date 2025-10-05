@@ -1,3 +1,4 @@
+airportfinder
 aiohappyeyeballs==2.6.1
 aiohttp==3.12.15
 aiosignal==1.4.0
@@ -108,3 +109,4 @@ yarl==1.20.1
 yfinance==0.2.37
 gunicorn
 deep-translator==1.11.4
+setuptools

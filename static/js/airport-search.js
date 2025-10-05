@@ -28,7 +28,7 @@ class AirportAutocomplete {
     });
 
     this.input.addEventListener("focus", () => {
-      if (this.input.value.length >= 2 && !this.selectedAirportCode) {
+      if (this.input.value.length >= 1 && !this.selectedAirportCode) {
         this.handleInput(this.input.value);
       }
     });
@@ -52,7 +52,8 @@ class AirportAutocomplete {
   async handleInput(query) {
     console.log(`🔍 handleInput wywołane z query: "${query}"`);
 
-    if (query.length < 2) {
+    // Zmień minimalną długość z 2 na 1 znak
+    if (query.length < 1) {
       console.log("❌ Query za krótkie, ukrywam sugestie");
       this.hideSuggestions();
       this.selectedAirportCode = "";

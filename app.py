@@ -159,7 +159,8 @@ async def search_airports():
 
     print(f"🌐 API call /api/airports?q={query}")
 
-    if not query or len(query) < 2:
+    # Zmień minimalną długość z 2 na 1 znak
+    if not query or len(query) < 1:
         print("❌ Query za krótkie lub puste")
         return jsonify([])
 
