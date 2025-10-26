@@ -1,3 +1,5 @@
+// TODO: Fix city names with special characters breaking the input field
+// TODO: Add correct city names in the suggestions
 class AirportAutocomplete {
   constructor(inputId, suggestionsId) {
     this.input = document.getElementById(inputId);
@@ -26,7 +28,7 @@ class AirportAutocomplete {
     });
 
     this.input.addEventListener("focus", () => {
-      if (this.input.value.length >= 2 && !this.selectedAirportCode) {
+      if (this.input.value.length >= 1 && !this.selectedAirportCode) {
         this.handleInput(this.input.value);
       }
     });
@@ -50,7 +52,8 @@ class AirportAutocomplete {
   async handleInput(query) {
     console.log(`🔍 handleInput wywołane z query: "${query}"`);
 
-    if (query.length < 2) {
+    // Zmień minimalną długość z 2 na 1 znak
+    if (query.length < 1) {
       console.log("❌ Query za krótkie, ukrywam sugestie");
       this.hideSuggestions();
       this.selectedAirportCode = "";
@@ -300,15 +303,6 @@ class FlightSearchForm {
       return false;
     }
 
-    // Validate notifications
-    const emailChecked = document.getElementById("email_notify").checked;
-    const telegramChecked = document.getElementById("telegram_notify").checked;
-
-    if (!emailChecked && !telegramChecked) {
-      e.preventDefault();
-      this.showError("Proszę wybrać przynajmniej jeden sposób powiadomień");
-      return false;
-    }
 
     // Set airport codes for submission
     departureInput.value = departureInput.dataset.selectedCode;
@@ -322,22 +316,7 @@ class FlightSearchForm {
   }
 
   setupNotificationHandlers() {
-    const emailCheckbox = document.getElementById("email_notify");
-    const telegramCheckbox = document.getElementById("telegram_notify");
     const emailInput = document.getElementById("email_input");
-    const telegramInput = document.getElementById("telegram_input");
-
-    emailCheckbox.addEventListener("change", function () {
-      emailInput.disabled = !this.checked;
-      emailInput.required = this.checked;
-      if (!this.checked) emailInput.value = "";
-    });
-
-    telegramCheckbox.addEventListener("change", function () {
-      telegramInput.disabled = !this.checked;
-      telegramInput.required = this.checked;
-      if (!this.checked) telegramInput.value = "";
-    });
   }
 
   setupDateValidation() {

@@ -3,7 +3,7 @@ from datetime import datetime
 
 # Importujemy centralny obiekt db, a nie tworzymy własnego silnika
 from services.db_instance import db
-from services.models import User, FlightPreference, NotificationPreference
+from services.models import User, FlightPreference
 from services.schemas import FlightPreferences
 
 def create_tables(app):
@@ -44,22 +44,6 @@ class Database:
             print(f"Błąd przy zapisie użytkownika: {e}")
             return None, False
 
-    def notification_preferences_query(self, user_id: int, method: str) -> bool:
-        """Dodaje preferencje powiadomień dla użytkownika."""
-        try:
-            existing_pref = db.session.query(NotificationPreference).filter_by(user_id=user_id, method=method).first()
-            if not existing_pref:
-                new_pref = NotificationPreference(user_id=user_id, method=method, enabled=True)
-                db.session.add(new_pref)
-                db.session.commit()
-                return True
-            else:
-                return True
-        except Exception as e:
-            db.session.rollback()
-            print(f"Błąd przy zapisie preferencji powiadomień: {e}")
-            return False
-
     def flight_preferences(self, user_id: int, flight_prefs: FlightPreferences) -> bool:
         """Zapisuje w bazie nowe preferencje lotu."""
         try:
@@ -79,4 +63,15 @@ class Database:
         except Exception as e:
             db.session.rollback()
             print(f"Błąd przy zapisie preferencji lotu: {e}")
+            return False
+
+    def delete_flight_preference(self, preference: FlightPreference) -> bool:
+        """Usuwa podaną preferencję lotu z bazy danych."""
+        try:
+            db.session.delete(preference)
+            db.session.commit()
+            return True
+        except Exception as e:
+            db.session.rollback()
+            print(f"Błąd przy usuwaniu preferencji lotu: {e}")
             return False

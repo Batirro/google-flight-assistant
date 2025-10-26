@@ -1,6 +1,6 @@
 from typing import List, Dict, Optional
-from airports import airport_data
-from googletrans import Translator
+from airportfinder.airportfinder import Airports
+from deep_translator import GoogleTranslator
 import time
 import asyncio
 
@@ -11,7 +11,7 @@ class AirportSearch:
         Inicjalizuje serwis wyszukiwania lotnisk używając biblioteki airports-py
         """
         self.airports_cache = None
-        self.translator = Translator()
+        self.translator = GoogleTranslator(source='auto', target='en')
         self.translation_cache = {}  # Cache dla tłumaczeń
         self._load_airports()
 
@@ -27,7 +27,7 @@ class AirportSearch:
 
     async def _translate_to_english(self, text: str) -> List[str]:
         """
-        Tłumaczy tekst na angielski używając Google Translate
+        Tłumaczy tekst na angielski używając deep_translator
 
         Returns:
             Lista wariantów (oryginał + przetłumaczone)
@@ -41,46 +41,55 @@ class AirportSearch:
         variants = [text]  # Zawsze dodaj oryginał
 
         try:
-            # Wykryj język i przetłumacz na angielski
-            detected = await self.translator.detect(text)
-            print(f"🌐 Wykryty język: {detected.lang} dla '{text}'")
+            # Przywróć automatyczne tłumaczenie na angielski
+            print(f"🔄 Tłumaczę '{text}' na angielski...")
+            translated_text = self.translator.translate(text)
 
-            if detected.lang != 'en':  # Tylko jeśli nie jest po angielsku
-                translated = await self.translator.translate(text, dest='en', src=detected.lang)
-                translated_text = translated.text.lower()
+            if translated_text and translated_text.lower() != text_lower:
+                print(f"✅ Przetłumaczono '{text}' → '{translated_text}'")
 
-                print(f"🔄 Przetłumaczono '{text}' → '{translated_text}'")
-
-                # Dodaj różne warianty tłumaczenia
+                # Dodaj warianty przetłumaczonego tekstu
                 variants.extend([
                     translated_text,
                     translated_text.capitalize(),
-                    translated_text.title()
+                    translated_text.title(),
+                    translated_text.upper(),
+                    translated_text.lower()
                 ])
+            else:
+                print(f"ℹ️ Tekst '{text}' już jest w języku angielskim lub nie wymagał tłumaczenia")
 
             # Dodaj też warianty oryginalnego tekstu
             variants.extend([
                 text.capitalize(),
                 text.title(),
-                text.upper()
+                text.upper(),
+                text.lower()
             ])
 
         except Exception as e:
             print(f"❌ Błąd tłumaczenia '{text}': {e}")
-            # W przypadku błędu, użyj tylko oryginalnego tekstu
+            # W przypadku błędu, użyj tylko oryginalnego tekstu i jego wariantów
+            variants.extend([
+                text.capitalize(),
+                text.title(),
+                text.upper(),
+                text.lower()
+            ])
 
         # Usuń duplikaty
         unique_variants = []
         seen = set()
         for variant in variants:
-            if variant.lower() not in seen:
-                unique_variants.append(variant)
-                seen.add(variant.lower())
+            variant_clean = variant.strip()
+            if variant_clean and variant_clean.lower() not in seen:
+                unique_variants.append(variant_clean)
+                seen.add(variant_clean.lower())
 
         # Cache wynik
         self.translation_cache[text_lower] = unique_variants
 
-        # Małe opóźnienie żeby nie przeciążyć API
+        # Małe opóźnienie żeby nie przeciążyć API tłumaczenia
         await asyncio.sleep(0.1)
 
         return unique_variants
@@ -97,8 +106,10 @@ class AirportSearch:
                 Lista słowników z danymi lotnisk
             """
             print(f"🔍 Wyszukiwanie lotnisk dla: '{query}'")
+            airports = Airports()
 
-            if not query or len(query.strip()) < 2:
+            # Zmniejsz minimalną długość zapytania z 2 na 1 znak
+            if not query or len(query.strip()) < 1:
                 print("❌ Query za krótkie")
                 return []
 
@@ -110,45 +121,130 @@ class AirportSearch:
             results = []
             seen_codes = set()
 
-            # Pobierz warianty językowe zapytania
-            query_variants = await self._translate_to_english(query)
-            print(f"🌐 Warianty wyszukiwania: {query_variants}")
-
             try:
-                for search_query in query_variants:
-                    if len(results) >= limit:
-                        break
+                # Dla bardzo krótkich zapytań (1-2 znaki) szukaj tylko po kodzie IATA i bez tłumaczenia
+                if len(query) <= 2:
+                    print(f"🔤 Krótkie zapytanie - wyszukiwanie tylko po kodzie IATA: {query.upper()}")
 
-                    # 1. Wyszukaj po kodzie IATA (jeśli query wygląda jak kod)
-                    if len(search_query) == 3 and search_query.isalpha():
-                        print(f"🔤 Wyszukiwanie po kodzie IATA: {search_query.upper()}")
-                        airports_by_iata = airport_data.get_airport_by_iata(search_query.upper())
-                        print(f"📍 Znaleziono przez IATA: {len(airports_by_iata) if airports_by_iata else 0} wyników")
+                    # Wyszukaj po kodzie IATA
+                    if len(query) == 3 and query.isalpha():
+                        airport_info = airports.airports_iata.get(query.upper())
+                        if airport_info:
+                            airport_formatted = self._format_airport(airport_info)
+                            if airport_formatted:
+                                results.append(airport_formatted)
+                                seen_codes.add(airport_formatted['code'])
+                                print(f"✅ Znaleziono dokładny kod IATA: {airport_formatted['code']}")
 
-                        if airports_by_iata:
-                            for airport_info in airports_by_iata[:3]:  # Weź maksymalnie 3 wyniki
+                    # Dla 1-2 znaków, szukaj kodów IATA zaczynających się od tych liter
+                    elif query.isalpha():
+                        query_upper = query.upper()
+                        print(f"🔍 Szukam kodów IATA zaczynających się od: {query_upper}")
+
+                        matching_codes = [code for code in airports.airports_iata.keys()
+                                        if code.startswith(query_upper)][:limit]
+
+                        for code in matching_codes:
+                            if len(results) >= limit:
+                                break
+                            airport_info = airports.airports_iata.get(code)
+                            if airport_info:
                                 airport_formatted = self._format_airport(airport_info)
                                 if airport_formatted and airport_formatted['code'] not in seen_codes:
                                     results.append(airport_formatted)
                                     seen_codes.add(airport_formatted['code'])
-                                    print(f"✅ Dodano lotnisko: {airport_formatted['code']} - {airport_formatted['city']}")
+                                    print(f"✅ Dodano lotnisko przez prefiks IATA: {airport_formatted['code']}")
 
-                    # 2. Wyszukaj po nazwie (miasta/lotniska)
-                    if len(results) < limit:  # Tylko jeśli potrzebujemy więcej wyników
-                        print(f"🏙️ Wyszukiwanie po nazwie: {search_query}")
-                        airports_by_name = airport_data.search_by_name(search_query)
-                        print(f"📍 Znaleziono przez nazwę: {len(airports_by_name) if airports_by_name else 0} wyników")
+                    return results[:limit]
 
-                        if airports_by_name:
-                            for airport_info in airports_by_name:
-                                if len(results) >= limit:
+                # Dla dłuższych zapytań użyj pełnej logiki z tłumaczeniem
+                # Pobierz warianty językowe zapytania tylko dla zapytań >= 3 znaki
+                query_variants = await self._translate_to_english(query)
+                print(f"🌐 Warianty wyszukiwania: {query_variants}")
+
+                for search_query in query_variants:
+                    if len(results) >= limit:
+                        break
+
+                    # 1. Wyszukaj po kodzie IATA (jeśli query wygląda jak kod i ma dokładnie 3 znaki)
+                    if len(search_query) == 3 and search_query.isalpha():
+                        print(f"🔤 Wyszukiwanie po kodzie IATA: {search_query.upper()}")
+                        airport_info = airports.airports_iata.get(search_query.upper())
+                        print(f"📍 Znaleziono przez IATA: {1 if airport_info else 0} wyników")
+
+                        if airport_info:
+                            airport_formatted = self._format_airport(airport_info)
+                            if airport_formatted and airport_formatted['code'] not in seen_codes:
+                                results.append(airport_formatted)
+                                seen_codes.add(airport_formatted['code'])
+                                print(f"✅ Dodano lotnisko: {airport_formatted['code']} - {airport_formatted['city']}")
+
+                    # 2. Wyszukuj po nazwach miast w kodach IATA (fallback dla długich zapytań)
+                    if len(results) < limit and len(search_query) >= 3:
+                        print(f"🏙️ Wyszukiwanie po nazwie miasta w bazie IATA: {search_query}")
+                        search_lower = search_query.lower()
+
+                        # Przeszukaj wszystkie lotniska w poszukiwaniu pasujących miast/nazw
+                        matched_codes = []
+                        for code, airport_data in airports.airports_iata.items():
+                            if not airport_data:
+                                continue
+
+                            city = airport_data.get('city', '').lower()
+                            name = airport_data.get('name', '').lower()
+                            country = airport_data.get('country', '').lower()
+
+                            # Sprawdź czy zapytanie pasuje do miasta, nazwy lotniska lub kraju
+                            if (search_lower in city or
+                                search_lower in name or
+                                city.startswith(search_lower) or
+                                name.startswith(search_lower)):
+                                matched_codes.append(code)
+                                if len(matched_codes) >= limit:
                                     break
-                                airport_formatted = self._format_airport(airport_info)
-                                if (airport_formatted and
-                                    airport_formatted['code'] not in seen_codes):
-                                    results.append(airport_formatted)
-                                    seen_codes.add(airport_formatted['code'])
-                                    print(f"✅ Dodano lotnisko: {airport_formatted['code']} - {airport_formatted['city']}")
+
+                        print(f"📍 Znaleziono przez wyszukiwanie w bazie: {len(matched_codes)} kodów")
+
+                        for code in matched_codes:
+                            if len(results) >= limit:
+                                break
+                            if code not in seen_codes:
+                                airport_info = airports.airports_iata.get(code)
+                                if airport_info:
+                                    airport_formatted = self._format_airport(airport_info)
+                                    if airport_formatted:
+                                        results.append(airport_formatted)
+                                        seen_codes.add(airport_formatted['code'])
+                                        print(f"✅ Dodano lotnisko: {airport_formatted['code']} - {airport_formatted['city']}")
+
+                    # 3. Próba użycia airport_name() jako backup (może nie działać we wszystkich przypadkach)
+                    if len(results) < limit and len(search_query) >= 3:
+                        print(f"🔍 Próba użycia airport_name(): {search_query}")
+                        try:
+                            airports_by_name = airports.airport_name(search_query)
+
+                            # Sprawdź czy wynik to lista czy pojedynczy element
+                            if airports_by_name:
+                                if isinstance(airports_by_name, dict):
+                                    airports_by_name = [airports_by_name]
+                                elif not isinstance(airports_by_name, list):
+                                    airports_by_name = []
+
+                                print(f"📍 Znaleziono przez airport_name(): {len(airports_by_name) if airports_by_name else 0} wyników")
+
+                                if airports_by_name:
+                                    for airport_info in airports_by_name:
+                                        if len(results) >= limit:
+                                            break
+                                        airport_formatted = self._format_airport(airport_info)
+                                        if (airport_formatted and
+                                            airport_formatted['code'] not in seen_codes):
+                                            results.append(airport_formatted)
+                                            seen_codes.add(airport_formatted['code'])
+                                            print(f"✅ Dodano lotnisko przez airport_name: {airport_formatted['code']} - {airport_formatted['city']}")
+                        except Exception as e:
+                            print(f"❌ Błąd w airport_name() dla '{search_query}': {e}")
+                            continue
 
                 # 3. Sortuj wyniki - dokładne dopasowania najpierw
                 results = self._sort_results(results, query)
@@ -174,16 +270,15 @@ class AirportSearch:
                     return None
 
                 # Sprawdź czy ma kod IATA
-                iata_code = airport_info.get('iata')
+                iata_code = airport_info.get('code')
                 if not iata_code or len(iata_code) != 3:
                     print(f"❌ Brak kodu IATA lub nieprawidłowy: {iata_code}")
                     return None
 
                 # Wyciągnij potrzebne dane
-                airport_name = airport_info.get('airport', '')
+                airport_name = airport_info.get('name', '')
                 city = airport_info.get('city', '')
-                country_code = airport_info.get('country_code', '')
-                country = airport_info.get('country', country_code)
+                country = airport_info.get('country', '')
 
                 # Jeśli brakuje miasta, spróbuj wyciągnąć je z nazwy lotniska
                 if not city and airport_name:
@@ -242,13 +337,15 @@ class AirportSearch:
         """
         Pobiera lotnisko po kodzie IATA
         """
+        airports = Airports()
         try:
             if not iata_code or len(iata_code) != 3:
                 return None
 
-            airports_list = airport_data.get_airport_by_iata(iata_code.upper())
-            if airports_list and len(airports_list) > 0:
-                return self._format_airport(airports_list[0])
+            # airports_iata to słownik - używaj get() zamiast wywołania funkcji
+            airport_info = airports.airports_iata.get(iata_code.upper())
+            if airport_info:
+                return self._format_airport(airport_info)
             return None
 
         except Exception as e:

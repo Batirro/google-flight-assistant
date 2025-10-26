@@ -10,7 +10,7 @@ import os
 from dotenv import load_dotenv
 
 from services.db_instance import db
-from services.models import User, FlightPreference, NotificationPreference
+from services.models import User, FlightPreference
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config

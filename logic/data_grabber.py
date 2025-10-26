@@ -2,13 +2,21 @@ import os
 import json
 from dotenv import load_dotenv
 from serpapi import GoogleSearch
+from pathlib import Path
 from services.schemas import FlightSearchParams
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+JSON_FILE_PATH = os.path.join(PROJECT_ROOT, 'flights_dates.json')
+
 class DataGrabber:
     def __init__(self):
         load_dotenv()
         self.api_key = os.getenv("SERP_API")
         if not self.api_key:
             raise ValueError("Brak klucza API SERP_API w zmiennych środowiskowych")
+
+        data_dir = Path(os.getenv('DATA_DIR', './data'))
+        data_dir.mkdir(parents=True, exist_ok=True)
+        self.json_file_path = data_dir / 'flights_dates.json'
 
     def api_connector(self, flight_params: FlightSearchParams):
         params = {
@@ -29,6 +37,13 @@ class DataGrabber:
     
     def pobierz_dane(self, response):
         data = response
-        with open("flights_dates.json", "w", encoding="utf-8") as file:
-            json.dump(data, file, indent=4, ensure_ascii=False)
-        print("✅ Dane zapisane do 'flights_dates.json'")  
+        if "error" in data:
+            print("!!! Otrzymano błąd z API SerpApi !!!")
+            print(data["error"])
+        try:
+            with open(self.json_file_path, "w", encoding="utf-8") as file:
+                json.dump(data, file, indent=4, ensure_ascii=False)
+            print(f"✅ Dane zapisane do '{self.json_file_path}'")
+        except PermissionError as e:
+            print(f"❌ Błąd uprawnień: {e}")
+            return data
